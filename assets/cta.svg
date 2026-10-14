@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="100" viewBox="0 0 440 100" role="img" aria-labelledby="t d">
+<title id="t">START A PROJECT  →</title>
+<desc id="d">START A PROJECT  →</desc>
+<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="bt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/></linearGradient><linearGradient id="sh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><clipPath id="bc"><rect x="8" y="12" width="424" height="60" rx="30"/></clipPath></defs>
+<style>
+text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.m{font-family:'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes tw{0%,100%{opacity:.12}50%{opacity:.95}}
+@keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.4);opacity:0}}
+@keyframes sweep{0%{transform:translateX(-30%)}100%{transform:translateX(130%)}}
+@keyframes grow{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@keyframes rise{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
+.fl{animation:fl 5.5s ease-in-out infinite}
+.fl2{animation:fl 7s ease-in-out -2s infinite}
+.fl3{animation:fl 4.6s ease-in-out -1s infinite}
+.tw{animation:tw 3.4s ease-in-out infinite}
+.pr{transform-box:fill-box;transform-origin:center;animation:ring 2.2s ease-out infinite}
+.sw{animation:sweep 5s linear infinite}
+.sw2{animation:sweep 4s linear infinite}
+.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 2.2s .4s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<ellipse class="fl3" cx="220.0" cy="52" rx="200.0" ry="24" fill="#8b5cf6" opacity=".35" filter="url(#b18)"/><rect x="8" y="24" width="424" height="60" rx="30" fill="#3b1585"/><rect x="8" y="18" width="424" height="60" rx="30" fill="#5b21b6"/><rect x="8" y="12" width="424" height="60" rx="30" fill="url(#bt)"/><rect x="12" y="14" width="416" height="26" rx="13" fill="#fff" opacity=".16"/><g clip-path="url(#bc)"><rect class="sw" x="0" y="12" width="90" height="60" fill="url(#sh)" transform="skewX(-18)"/></g><text x="220.0" y="50" font-size="23" font-weight="800" text-anchor="middle" fill="none" letter-spacing="2.4" stroke="#3b1585" stroke-width="4" stroke-linejoin="round">START A PROJECT  →</text><text x="220.0" y="50" font-size="23" font-weight="800" text-anchor="middle" fill="#fff" letter-spacing="2.4">START A PROJECT  →</text>
+</svg>

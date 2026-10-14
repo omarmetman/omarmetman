@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="150" viewBox="0 0 432 150" role="img" aria-labelledby="t d">
+<title id="t">Telegram Bots: Custom bots, automations and integrations. My special attack.</title>
+<desc id="d">Telegram Bots: Custom bots, automations and integrations. My special attack.</desc>
+<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="q0f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a2142"/><stop offset="1" stop-color="#0f1530"/></linearGradient><linearGradient id="q0b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#26a5e4" stop-opacity="0.95"/><stop offset="0.55" stop-color="#26a5e4" stop-opacity="0.28"/><stop offset="1" stop-color="#26a5e4" stop-opacity="0.08"/></linearGradient><radialGradient id="q0g" cx=".1" cy=".05" r=".8"><stop offset="0" stop-color="#26a5e4" stop-opacity=".28"/><stop offset="1" stop-color="#26a5e4" stop-opacity="0"/></radialGradient></defs>
+<style>
+text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.m{font-family:'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes tw{0%,100%{opacity:.12}50%{opacity:.95}}
+@keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.4);opacity:0}}
+@keyframes sweep{0%{transform:translateX(-30%)}100%{transform:translateX(130%)}}
+@keyframes grow{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@keyframes rise{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
+.fl{animation:fl 5.5s ease-in-out infinite}
+.fl2{animation:fl 7s ease-in-out -2s infinite}
+.fl3{animation:fl 4.6s ease-in-out -1s infinite}
+.tw{animation:tw 3.4s ease-in-out infinite}
+.pr{transform-box:fill-box;transform-origin:center;animation:ring 2.2s ease-out infinite}
+.sw{animation:sweep 5s linear infinite}
+.sw2{animation:sweep 4s linear infinite}
+.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 2.2s .4s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="14" y="24" width="404" height="124" rx="18" fill="#000" opacity=".5" filter="url(#b10)"/><rect x="4" y="16" width="424" height="128" rx="18" fill="#0a2b3b"/><rect x="4" y="10.0" width="424" height="128" rx="18" fill="#104560"/><rect x="4" y="4" width="424" height="128" rx="18" fill="url(#q0f)"/><rect x="4" y="4" width="424" height="128" rx="18" fill="url(#q0g)"/><rect x="4.75" y="4.75" width="422.5" height="126.5" rx="17.5" fill="none" stroke="url(#q0b)" stroke-width="1.5"/><line x1="22" y1="5.5" x2="410" y2="5.5" stroke="#fff" stroke-opacity=".14"/><ellipse cx="56" cy="88" rx="24" ry="6.7" fill="#000" opacity="0.45" filter="url(#b4)"/><g class="fl"><polygon points="33.5,37.0 56.0,50.0 56.0,76.0 33.5,63.0" fill="#1e81b2"/><polygon points="56.0,50.0 78.5,37.0 78.5,63.0 56.0,76.0" fill="#135272"/><polygon points="56.0,24.0 78.5,37.0 56.0,50.0 33.5,37.0" fill="#63beec"/><g transform="matrix(0.2252 0.1300 -0.2252 0.1300 56.00 24.00)"><line x1="50" y1="30" x2="50" y2="15" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="50" cy="12" r="6.5" fill="#ffffff"/><rect x="16" y="30" width="68" height="54" rx="17" fill="#ffffff"/><rect x="5" y="47" width="8" height="21" rx="4" fill="#ffffff"/><rect x="87" y="47" width="8" height="21" rx="4" fill="#ffffff"/><circle cx="36" cy="54" r="8" fill="#26a5e4"/><circle cx="64" cy="54" r="8" fill="#26a5e4"/><rect x="38" y="68" width="24" height="5" rx="2.5" fill="#114a67"/></g><polyline points="33.5,37.0 56.0,24.0 78.5,37.0" fill="none" stroke="#a8dbf4" stroke-opacity=".55" stroke-width="1" stroke-linejoin="round"/></g><text x="104" y="50" font-size="20" font-weight="800" fill="#fff">Telegram Bots</text><rect x="104" y="60" width="36" height="3" rx="1.5" fill="#26a5e4"/><text x="104" y="86" font-size="13.5" fill="#cbd5e1">Custom bots, automations and</text><text x="104" y="106" font-size="13.5" fill="#cbd5e1">integrations. My special attack.</text>
+</svg>

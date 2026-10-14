@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="150" viewBox="0 0 432 150" role="img" aria-labelledby="t d">
+<title id="t">Full-Stack Web Apps: From idea to deployed product with React, Next.js and Node.</title>
+<desc id="d">Full-Stack Web Apps: From idea to deployed product with React, Next.js and Node.</desc>
+<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="q2f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a2142"/><stop offset="1" stop-color="#0f1530"/></linearGradient><linearGradient id="q2b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f472b6" stop-opacity="0.95"/><stop offset="0.55" stop-color="#f472b6" stop-opacity="0.28"/><stop offset="1" stop-color="#f472b6" stop-opacity="0.08"/></linearGradient><radialGradient id="q2g" cx=".1" cy=".05" r=".8"><stop offset="0" stop-color="#f472b6" stop-opacity=".28"/><stop offset="1" stop-color="#f472b6" stop-opacity="0"/></radialGradient></defs>
+<style>
+text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.m{font-family:'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes tw{0%,100%{opacity:.12}50%{opacity:.95}}
+@keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.4);opacity:0}}
+@keyframes sweep{0%{transform:translateX(-30%)}100%{transform:translateX(130%)}}
+@keyframes grow{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@keyframes rise{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
+.fl{animation:fl 5.5s ease-in-out infinite}
+.fl2{animation:fl 7s ease-in-out -2s infinite}
+.fl3{animation:fl 4.6s ease-in-out -1s infinite}
+.tw{animation:tw 3.4s ease-in-out infinite}
+.pr{transform-box:fill-box;transform-origin:center;animation:ring 2.2s ease-out infinite}
+.sw{animation:sweep 5s linear infinite}
+.sw2{animation:sweep 4s linear infinite}
+.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 2.2s .4s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="14" y="24" width="404" height="124" rx="18" fill="#000" opacity=".5" filter="url(#b10)"/><rect x="4" y="16" width="424" height="128" rx="18" fill="#3f1e2f"/><rect x="4" y="10.0" width="424" height="128" rx="18" fill="#66304c"/><rect x="4" y="4" width="424" height="128" rx="18" fill="url(#q2f)"/><rect x="4" y="4" width="424" height="128" rx="18" fill="url(#q2g)"/><rect x="4.75" y="4.75" width="422.5" height="126.5" rx="17.5" fill="none" stroke="url(#q2b)" stroke-width="1.5"/><line x1="22" y1="5.5" x2="410" y2="5.5" stroke="#fff" stroke-opacity=".14"/><ellipse cx="56" cy="88" rx="24" ry="6.7" fill="#000" opacity="0.45" filter="url(#b4)"/><g class="fl"><polygon points="33.5,37.0 56.0,50.0 56.0,76.0 33.5,63.0" fill="#be598e"/><polygon points="56.0,50.0 78.5,37.0 78.5,63.0 56.0,76.0" fill="#7a395b"/><polygon points="56.0,24.0 78.5,37.0 56.0,50.0 33.5,37.0" fill="#f799ca"/><g transform="matrix(0.2252 0.1300 -0.2252 0.1300 56.00 24.00)"><polyline points="34,26 11,50 34,74" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/><polyline points="66,26 89,50 66,74" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/><line x1="57" y1="20" x2="43" y2="80" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><polyline points="33.5,37.0 56.0,24.0 78.5,37.0" fill="none" stroke="#fbc7e2" stroke-opacity=".55" stroke-width="1" stroke-linejoin="round"/></g><text x="104" y="50" font-size="20" font-weight="800" fill="#fff">Full-Stack Web Apps</text><rect x="104" y="60" width="36" height="3" rx="1.5" fill="#f472b6"/><text x="104" y="86" font-size="13.5" fill="#cbd5e1">From idea to deployed product with</text><text x="104" y="106" font-size="13.5" fill="#cbd5e1">React, Next.js and Node.</text>
+</svg>

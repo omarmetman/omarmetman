@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="150" viewBox="0 0 432 150" role="img" aria-labelledby="t d">
+<title id="t">Offline-first Apps: Apps that stay fast and useful with no connection at all.</title>
+<desc id="d">Offline-first Apps: Apps that stay fast and useful with no connection at all.</desc>
+<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="q3f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a2142"/><stop offset="1" stop-color="#0f1530"/></linearGradient><linearGradient id="q3b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.95"/><stop offset="0.55" stop-color="#f59e0b" stop-opacity="0.28"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0.08"/></linearGradient><radialGradient id="q3g" cx=".1" cy=".05" r=".8"><stop offset="0" stop-color="#f59e0b" stop-opacity=".28"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient></defs>
+<style>
+text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.m{font-family:'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes tw{0%,100%{opacity:.12}50%{opacity:.95}}
+@keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.4);opacity:0}}
+@keyframes sweep{0%{transform:translateX(-30%)}100%{transform:translateX(130%)}}
+@keyframes grow{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@keyframes rise{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
+.fl{animation:fl 5.5s ease-in-out infinite}
+.fl2{animation:fl 7s ease-in-out -2s infinite}
+.fl3{animation:fl 4.6s ease-in-out -1s infinite}
+.tw{animation:tw 3.4s ease-in-out infinite}
+.pr{transform-box:fill-box;transform-origin:center;animation:ring 2.2s ease-out infinite}
+.sw{animation:sweep 5s linear infinite}
+.sw2{animation:sweep 4s linear infinite}
+.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 2.2s .4s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="14" y="24" width="404" height="124" rx="18" fill="#000" opacity=".5" filter="url(#b10)"/><rect x="4" y="16" width="424" height="128" rx="18" fill="#402903"/><rect x="4" y="10.0" width="424" height="128" rx="18" fill="#674205"/><rect x="4" y="4" width="424" height="128" rx="18" fill="url(#q3f)"/><rect x="4" y="4" width="424" height="128" rx="18" fill="url(#q3g)"/><rect x="4.75" y="4.75" width="422.5" height="126.5" rx="17.5" fill="none" stroke="url(#q3b)" stroke-width="1.5"/><line x1="22" y1="5.5" x2="410" y2="5.5" stroke="#fff" stroke-opacity=".14"/><ellipse cx="56" cy="88" rx="24" ry="6.7" fill="#000" opacity="0.45" filter="url(#b4)"/><g class="fl"><polygon points="33.5,37.0 56.0,50.0 56.0,76.0 33.5,63.0" fill="#bf7b09"/><polygon points="56.0,50.0 78.5,37.0 78.5,63.0 56.0,76.0" fill="#7a4f06"/><polygon points="56.0,24.0 78.5,37.0 56.0,50.0 33.5,37.0" fill="#f8b94f"/><g transform="matrix(0.2252 0.1300 -0.2252 0.1300 56.00 24.00)"><rect x="27" y="7" width="46" height="86" rx="11" fill="#ffffff"/><rect x="33" y="18" width="34" height="58" rx="4" fill="#6e4705"/><circle cx="50" cy="85" r="3.2" fill="#6e4705"/><path d="M50 28 V54 M39 44 L50 56 L61 44" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><line x1="39" y1="67" x2="61" y2="67" stroke="#f59e0b" stroke-width="5.5" stroke-linecap="round"/></g><polyline points="33.5,37.0 56.0,24.0 78.5,37.0" fill="none" stroke="#fbd89d" stroke-opacity=".55" stroke-width="1" stroke-linejoin="round"/></g><text x="104" y="50" font-size="20" font-weight="800" fill="#fff">Offline-first Apps</text><rect x="104" y="60" width="36" height="3" rx="1.5" fill="#f59e0b"/><text x="104" y="86" font-size="13.5" fill="#cbd5e1">Apps that stay fast and useful with no</text><text x="104" y="106" font-size="13.5" fill="#cbd5e1">connection at all.</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="88" viewBox="0 0 900 88" role="img" aria-labelledby="t d">
+<title id="t">Character Sheet</title>
+<desc id="d">Character Sheet</desc>
+<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="pn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#171036"/></linearGradient><linearGradient id="ln" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8b5cf6"/><stop offset="0.6" stop-color="#22d3ee"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></linearGradient><linearGradient id="sp" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6" stop-opacity="0.8"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0.35"/></linearGradient><clipPath id="cp"><rect width="900" height="88" rx="18"/></clipPath></defs>
+<style>
+text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.m{font-family:'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes tw{0%,100%{opacity:.12}50%{opacity:.95}}
+@keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.4);opacity:0}}
+@keyframes sweep{0%{transform:translateX(-30%)}100%{transform:translateX(130%)}}
+@keyframes grow{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@keyframes rise{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
+.fl{animation:fl 5.5s ease-in-out infinite}
+.fl2{animation:fl 7s ease-in-out -2s infinite}
+.fl3{animation:fl 4.6s ease-in-out -1s infinite}
+.tw{animation:tw 3.4s ease-in-out infinite}
+.pr{transform-box:fill-box;transform-origin:center;animation:ring 2.2s ease-out infinite}
+.sw{animation:sweep 5s linear infinite}
+.sw2{animation:sweep 4s linear infinite}
+.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 2.2s .4s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#cp)"><rect width="900" height="88" fill="url(#pn)"/><circle cx="60" cy="40" r="90" fill="#8b5cf6" opacity=".10" filter="url(#b18)"/><ellipse cx="46" cy="74" rx="19" ry="5.3" fill="#000" opacity="0.45" filter="url(#b4)"/><g class="fl"><polygon points="25.2,26.0 46.0,38.0 46.0,62.0 25.2,50.0" fill="#6c48c0"/><polygon points="46.0,38.0 66.8,26.0 66.8,50.0 46.0,62.0" fill="#462e7b"/><polygon points="46.0,14.0 66.8,26.0 46.0,38.0 25.2,26.0" fill="#ab8af9"/><g transform="matrix(0.2078 0.1200 -0.2078 0.1200 46.00 14.00)"><circle cx="50" cy="32" r="19" fill="#ffffff"/><path d="M12 92 C12 56 88 56 88 92 Z" fill="#ffffff"/></g><polyline points="25.2,26.0 46.0,14.0 66.8,26.0" fill="none" stroke="#d1befb" stroke-opacity=".55" stroke-width="1" stroke-linejoin="round"/></g><text x="96.50" y="59.70" font-size="34" font-weight="900" text-anchor="start" letter-spacing="2.5" fill="#24105c" >CHARACTER SHEET</text><text x="95.75" y="58.75" font-size="34" font-weight="900" text-anchor="start" letter-spacing="2.5" fill="#2d166e" >CHARACTER SHEET</text><text x="95.00" y="57.80" font-size="34" font-weight="900" text-anchor="start" letter-spacing="2.5" fill="#361b80" >CHARACTER SHEET</text><text x="94.25" y="56.85" font-size="34" font-weight="900" text-anchor="start" letter-spacing="2.5" fill="#402192" >CHARACTER SHEET</text><text x="93.50" y="55.90" font-size="34" font-weight="900" text-anchor="start" letter-spacing="2.5" fill="#4927a5" >CHARACTER SHEET</text><text x="92.75" y="54.95" font-size="34" font-weight="900" text-anchor="start" letter-spacing="2.5" fill="#522cb7" >CHARACTER SHEET</text><text class="" style="" x="92" y="54" font-size="34" font-weight="900" text-anchor="start" letter-spacing="2.5" fill="#fff" >CHARACTER SHEET</text><text class="m" x="872" y="50" font-size="14" text-anchor="end" fill="#94a3b8">// about.me</text><rect x="24" y="75" width="852" height="2" rx="1" fill="url(#ln)"/><rect class="sw2" x="0" y="74" width="160" height="4" fill="url(#sp)"/></g><rect x=".75" y=".75" width="898.5" height="86.5" rx="17.5" fill="none" stroke="url(#bd)" stroke-width="1.5"/>
+</svg>

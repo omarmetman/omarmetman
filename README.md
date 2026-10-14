@@ -1,19 +1,32 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=28&pause=1000&color=8B5CF6&center=true&vCenter=true&width=700&lines=I+turn+caffeine+into+production+code;Bots.+Apps.+AI.+Shipped.;Sleep+is+a+deprecated+feature" alt="Typing SVG" />
+<img src="./assets/header.svg" alt="Omar M. Etman, Software Engineer from Planet Earth, currently operating at full stack" width="100%" />
 
-# ⚔️ Omar M. Etman
+<br />
 
-### *Software Engineer from Planet Earth — currently operating at full stack*
+<a href="https://omarmetman.vercel.app"><img src="https://img.shields.io/badge/ENTER_THE_LAB-omarmetman.vercel.app-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0f172a" alt="Portfolio"></a>
+<a href="https://t.me/omarmetman"><img src="https://img.shields.io/badge/SUMMON_ME-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0f172a" alt="Telegram"></a>
 
-<a href="https://omarmetman.vercel.app"><img src="https://img.shields.io/badge/ENTER_THE_LAB-omarmetman.vercel.app-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0f172a"></a>
-<a href="https://t.me/omarmetman"><img src="https://img.shields.io/badge/SUMMON_ME-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0f172a"></a>
+<br />
 
-![Profile Views](https://komarev.com/ghpvc/?username=omarmetman&color=8b5cf6&style=flat-square&label=WITNESSES)
+<img src="https://komarev.com/ghpvc/?username=omarmetman&color=8b5cf6&style=flat-square&label=WITNESSES" alt="Profile views" />
 
 </div>
 
----
+<br />
+
+<img src="./assets/section-character.svg" alt="Character Sheet" width="100%" />
+
+<div align="center">
+
+<img src="./assets/character.svg" alt="Origin: Mansoura, Egypt. Class: Full Stack Software Developer. Level: 5+ years in production. Education: Mechatronics Engineering at Delta University. Special attack: Telegram Bots, 95% mastery. Side quests: AI chatbots, offline-first mobile apps, IoT systems." width="100%" />
+
+<img src="./assets/achievements.svg" alt="5+ years in production, 28+ projects shipped, 60+ technical articles, 1 product sold" width="100%" />
+
+</div>
+
+<details>
+<summary><b>View the source of this character</b></summary>
 
 ```javascript
 const omar = {
@@ -28,62 +41,122 @@ const omar = {
 };
 ```
 
----
+</details>
 
-## 🧬 ARSENAL
+<br />
+
+<img src="./assets/section-arsenal.svg" alt="Arsenal" width="100%" />
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,express,python,html,css,tailwind,firebase,mongodb,docker,git,linux,vscode,vercel&theme=dark" alt="Arsenal" />
+
+<img src="https://img.shields.io/badge/LANGUAGES-8b5cf6?style=flat-square" alt="Languages" /><br />
+<img src="https://skillicons.dev/icons?i=js,ts,python,html,css&theme=dark" alt="JavaScript, TypeScript, Python, HTML, CSS" />
+
+<img src="https://img.shields.io/badge/FRONTEND-22d3ee?style=flat-square" alt="Frontend" /><br />
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind&theme=dark" alt="React, Next.js, Tailwind CSS" />
+
+<img src="https://img.shields.io/badge/BACKEND-f472b6?style=flat-square" alt="Backend" /><br />
+<img src="https://skillicons.dev/icons?i=nodejs,express&theme=dark" alt="Node.js, Express" />
+
+<img src="https://img.shields.io/badge/DATA_%26_CLOUD-f59e0b?style=flat-square" alt="Data and cloud" /><br />
+<img src="https://skillicons.dev/icons?i=firebase,mongodb,docker,vercel&theme=dark" alt="Firebase, MongoDB, Docker, Vercel" />
+
+<img src="https://img.shields.io/badge/TOOLS-22c55e?style=flat-square" alt="Tools" /><br />
+<img src="https://skillicons.dev/icons?i=git,linux,vscode&theme=dark" alt="Git, Linux, VS Code" />
+
 </div>
 
----
+<br />
 
-## 📊 BATTLE RECORD
+<img src="./assets/section-record.svg" alt="Battle Record" width="100%" />
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=omarmetman&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f172a&rank_icon=github&title_color=8b5cf6" alt="Battle Record" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omarmetman&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=8b5cf6" alt="Weapons of Choice" />
-  <br />
-  <img src="https://streak-stats.demolab.com?user=omarmetman&theme=tokyonight&hide_border=true&background=0f172a" alt="Win Streak" />
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=omarmetman&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f172a&rank_icon=github&title_color=8b5cf6&icon_color=22d3ee&ring_color=8b5cf6" alt="GitHub stats" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omarmetman&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=8b5cf6" alt="Top languages" />
+
+<img src="https://streak-stats.demolab.com?user=omarmetman&theme=tokyonight&hide_border=true&background=0f172a&ring=8b5cf6&fire=f472b6&currStreakLabel=22d3ee" alt="Contribution streak" />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
+  <img src="./profile-3d-contrib/profile-green-animate.svg" alt="3D contribution graph" width="100%" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/omarmetman/omarmetman/output/github-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/omarmetman/omarmetman/output/github-snake.svg" alt="A snake eating my contribution graph" width="100%" />
+</picture>
+
 </div>
 
----
+<br />
 
-## 🏆 LEGENDARY BUILDS
-
-| Artifact | Power | Portal |
-| :--- | :--- | :---: |
-| 💬 **Whisper** | A real-time bilingual chat realm — fingerprint-locked vaults, an AI oracle, expiring stories, offline mode. Co-forged with Sara Waleed | [Enter](https://omarmetman.vercel.app/projects/whisper) |
-| 📡 **WA-Radar-Serverr** | A headless sentinel that intercepts deleted WhatsApp messages and relays them to Telegram | [Repo](https://github.com/omarmetman/WA-Radar-Serverr) |
-| 🎨 **devfolio-template** | A premium portfolio forge — dark theme, glassmorphism, Telegram integration | [Repo](https://github.com/omarmetman/devfolio-template) |
-| 🕌 **Sirat-E-Mustaqeem** | A free, ad-free sanctuary — Quran, Athkar, prayer times | [Enter](https://omarmetman.vercel.app/projects/sirat) |
-| 💰 **Etman Finance** | An offline vault for personal finance — bilingual, zero accounts | [Enter](https://omarmetman.vercel.app/projects/etman-finance) |
-
-> 📜 Full archive: [60+ scrolls of knowledge](https://omarmetman.vercel.app/blog) · [28+ conquered projects](https://omarmetman.vercel.app/projects)
-
----
-
-## 🧠 COMBAT DOCTRINE
-
-> *“Ship fast. Break nothing.”*
-> *“If it is not bilingual, realtime and offline-first — it is not finished.”*
-> *“Sleep is a deprecated feature.”*
-
----
-
-## 📡 TRANSMISSION CHANNELS
+<img src="./assets/section-builds.svg" alt="Legendary Builds" width="100%" />
 
 <div align="center">
 
-<a href="https://t.me/omarmetman"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"></a>
-<a href="https://t.me/omaretmanBOT"><img src="https://img.shields.io/badge/Bot-8b5cf6?style=for-the-badge&logo=telegram&logoColor=white"></a>
-<a href="https://www.linkedin.com/in/omar-m-etman"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-<a href="https://x.com/omarm3tman"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"></a>
-<a href="https://www.instagram.com/omarmetman"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-<a href="mailto:omarmetman90@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
+<a href="https://omarmetman.vercel.app/projects/whisper"><img src="./assets/card-whisper.svg" alt="Whisper: a real-time bilingual chat realm with fingerprint-locked vaults, an AI oracle, expiring stories and offline mode. Co-forged with Sara Waleed." width="100%" /></a>
+
+<a href="https://github.com/omarmetman/WA-Radar-Serverr"><img src="./assets/card-wa-radar.svg" alt="WA-Radar-Serverr: a headless sentinel that intercepts deleted WhatsApp messages and relays them to Telegram." width="49%" /></a>
+<a href="https://github.com/omarmetman/devfolio-template"><img src="./assets/card-devfolio.svg" alt="devfolio-template: a premium portfolio forge with a dark theme, glassmorphism and Telegram integration." width="49%" /></a>
+
+<a href="https://omarmetman.vercel.app/projects/sirat"><img src="./assets/card-sirat.svg" alt="Sirat-E-Mustaqeem: a free, ad-free sanctuary with Quran, Athkar and prayer times." width="49%" /></a>
+<a href="https://omarmetman.vercel.app/projects/etman-finance"><img src="./assets/card-finance.svg" alt="Etman Finance: an offline vault for personal finance, bilingual, with zero accounts." width="49%" /></a>
+
+<a href="https://omarmetman.vercel.app/projects"><img src="./assets/card-archive.svg" alt="The full archive: 28+ conquered projects and 60+ scrolls of knowledge." width="100%" /></a>
+
+<sub>📜 Read the <a href="https://omarmetman.vercel.app/blog">60+ scrolls of knowledge</a> · Explore the <a href="https://omarmetman.vercel.app/projects">28+ conquered projects</a></sub>
+
+</div>
+
+<br />
+
+<img src="./assets/section-quests.svg" alt="Quest Board" width="100%" />
+
+<div align="center">
+
+<a href="https://omarmetman.vercel.app/request"><img src="./assets/quest-bots.svg" alt="Telegram Bots: custom bots, automations and integrations" width="49%" /></a>
+<a href="https://omarmetman.vercel.app/request"><img src="./assets/quest-ai.svg" alt="AI Chatbots: conversational assistants wired into real products" width="49%" /></a>
+
+<a href="https://omarmetman.vercel.app/request"><img src="./assets/quest-web.svg" alt="Full-Stack Web Apps: from idea to deployed product" width="49%" /></a>
+<a href="https://omarmetman.vercel.app/request"><img src="./assets/quest-mobile.svg" alt="Offline-first Apps: fast and useful with no connection" width="49%" /></a>
+
+<a href="https://omarmetman.vercel.app/request"><img src="./assets/quest-iot.svg" alt="IoT Systems: connected hardware that talks to the cloud" width="49%" /></a>
+<a href="https://omarmetman.vercel.app/request"><img src="./assets/quest-writing.svg" alt="Technical Writing: 60+ articles" width="49%" /></a>
+
+<a href="https://omarmetman.vercel.app/request"><img src="./assets/cta.svg" alt="Start a project" width="360" /></a>
+
+</div>
+
+<br />
+
+<img src="./assets/section-doctrine.svg" alt="Combat Doctrine" width="100%" />
+
+<div align="center">
+
+<img src="./assets/doctrine.svg" alt="Ship fast. Break nothing. If it is not bilingual, realtime and offline-first, it is not finished. Sleep is a deprecated feature." width="100%" />
+
+</div>
+
+<br />
+
+<img src="./assets/section-channels.svg" alt="Transmission Channels" width="100%" />
+
+<div align="center">
+
+<a href="https://t.me/omarmetman"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
+<a href="https://t.me/omaretmanBOT"><img src="https://img.shields.io/badge/Bot-8b5cf6?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram bot"></a>
+<a href="https://www.linkedin.com/in/omar-m-etman"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://x.com/omarm3tman"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
+<a href="https://www.instagram.com/omarmetman"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+<a href="mailto:omarmetman90@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+
+<br /><br />
 
 **Got a quest? → [Start a project](https://omarmetman.vercel.app/request)**
 
-<sub>⚔️ Forged in Mansoura, deployed to the world</sub>
+<br />
+
+<img src="./assets/footer.svg" alt="Forged in Mansoura, deployed to the world" width="100%" />
 
 </div>
