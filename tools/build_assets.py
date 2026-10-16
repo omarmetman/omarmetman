@@ -662,6 +662,94 @@ def build_journey():
 
 
 # =========================================================================
+# OBSERVATION DECK — cinematic entry portal + "how to read" legend
+# for the Battle Record section (3D city, radar, donut, serpent)
+# =========================================================================
+def build_portal():
+    W, H = 888, 300
+    rnd = random.Random(99)
+    d = lg("pbg", [(0, "#05070f"), (.55, "#0c0623"), (1, "#160b3d")])
+    d += ('<radialGradient id="pgl" cx=".5" cy=".42" r=".55"><stop offset="0" stop-color="#22d3ee" stop-opacity=".30"/>'
+          '<stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>'
+          '<radialGradient id="pgr" cx=".85" cy=".5" r=".4"><stop offset="0" stop-color="#8b5cf6" stop-opacity=".35"/>'
+          '<stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>')
+    d += f'<clipPath id="pcp"><rect width="{W}" height="{H}" rx="22"/></clipPath>'
+    d += lg("pbd", [(0, CYAN, .9), (.5, "#fff", .08), (1, VIOLET, .9)], 0, 0, 1, 0)
+    b = f'<g clip-path="url(#pcp)"><rect width="{W}" height="{H}" fill="url(#pbg)"/>'
+    b += f'<rect width="{W}" height="{H}" fill="url(#pgl)"/><rect width="{W}" height="{H}" fill="url(#pgr)"/>'
+    for _ in range(60):
+        b += (f'<circle class="tw" cx="{rnd.uniform(8, W - 8):.0f}" cy="{rnd.uniform(8, H - 8):.0f}" '
+              f'r="{rnd.choice([.8, 1, 1.3, 1.7])}" fill="#fff" style="animation-delay:-{rnd.uniform(0, 3.4):.2f}s"/>')
+    # radar scope on the right
+    RX, RY, RR = 742, 150, 104
+    b += f'<circle cx="{RX}" cy="{RY}" r="{RR + 18}" fill="#0b1020" fill-opacity=".7"/>'
+    for r in (RR, RR * .72, RR * .44):
+        b += f'<circle cx="{RX}" cy="{RY}" r="{r:.0f}" fill="none" stroke="#22d3ee" stroke-opacity=".45"/>'
+    b += f'<line x1="{RX - RR}" y1="{RY}" x2="{RX + RR}" y2="{RY}" stroke="#22d3ee" stroke-opacity=".3"/>'
+    b += f'<line x1="{RX}" y1="{RY - RR}" x2="{RX}" y2="{RY + RR}" stroke="#22d3ee" stroke-opacity=".3"/>'
+    b += (f'<g class="spin"><polygon points="{RX - RR},{RY - 10} {RX - RR},{RY + 10} {RX + RR},{RY}" '
+          f'fill="#22d3ee" opacity=".28"/></g>')
+    b += f'<circle class="tw" cx="{RX + 52}" cy="{RY - 30}" r="4" fill="#f472b6"/>'
+    b += f'<circle class="tw" cx="{RX - 40}" cy="{RY + 44}" r="4" fill="#22c55e" style="animation-delay:-1.4s"/>'
+    b += f'<circle class="tw" cx="{RX + 10}" cy="{RY + 62}" r="3" fill="#f59e0b" style="animation-delay:-2.2s"/>'
+    b += f'<circle cx="{RX}" cy="{RY}" r="4" fill="#fff"/>'
+    # copy on the left
+    b += ('<text class="m" x="48" y="72" font-size="12" letter-spacing="3" fill="#67e8f9" font-weight="700">'
+          '// LIVE TELEMETRY</text>')
+    b += ext_text(46, 140, "OBSERVATION", 56, 900, "start", depth=10, far="#0b3a44", near="#0e7490",
+                  top="#ffffff", spacing=1)
+    b += ext_text(46, 196, "DECK", 56, 900, "start", depth=10, far="#24105c", near="#6d3ee0",
+                  top="#c4b5fd", spacing=8)
+    for i, ln in enumerate(["You are looking at live data, not decoration.",
+                            "Every chart below rebuilds itself from the commit history."]):
+        b += f'<text x="48" y="{226 + i * 24}" font-size="15" fill="#94a3b8">{esc(ln)}</text>'
+    b += '<rect x="48" y="272" width="220" height="2" fill="#22d3ee" opacity=".5"/>'
+    b += "</g>"
+    b += f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="21" fill="none" stroke="url(#pbd)" stroke-width="1.5"/>'
+    css = ("@keyframes spin{to{transform:rotate(360deg)}}"
+           ".spin{transform-box:fill-box;transform-origin:center;animation:spin 5s linear infinite}")
+    save("portal.svg", svg(W, H, "Observation deck: live telemetry portal",
+                            b, d, css, desc="You are looking at live data, not decoration."))
+
+
+def build_legend():
+    W, D = 888, 12
+    rows = [
+        ("THE LIVING CITY", "The isometric hologram is a full year of GitHub, rebuilt daily: every floor tile is one "
+         "day, every tower is code shipped that day. The pentagon radar scores 5 dimensions — Commit, Issue, "
+         "Pull Request, Review, Repo — and the donut weighs the languages that forged it all.",
+         CYAN, "layers"),
+        ("THE LANGUAGE DONUT", "JavaScript, HTML, Python, TypeScript — this is not decoration. It is the exact share "
+         "of code written across every public repository, recomputed on every single render.",
+         PINK, "compass"),
+        ("THE SERPENT", "A snake that eats the contribution grid, cell by cell. It only moves where there is history "
+         "to devour — so a long snake is proof of consistency, the one statistic that cannot be faked.",
+         GREEN, "route"),
+    ]
+    RH, TOP, FOOT = 132, 74, 64
+    PH = TOP + len(rows) * RH + FOOT + 12
+    H = PH + D + 10
+    d, b = slab("lgd", 4, 4, W - 8, PH, VIOLET, depth=D, rx=22)
+    b += ('<text class="m" x="32" y="36" font-size="12" letter-spacing="3" fill="#c4b5fd" font-weight="700">'
+          'FIELD MANUAL</text>')
+    b += f'<text x="30" y="64" font-size="21" font-weight="800" fill="#fff">How to read this battlefield</text>'
+    for i, (title, desc, col, g) in enumerate(rows):
+        y = TOP + i * RH
+        b += f'<rect x="30" y="{y}" width="{W - 60}" height="{RH - 12}" rx="14" fill="#0b1020" fill-opacity=".65" stroke="{col}" stroke-opacity=".35"/>'
+        b += shadow(84, y + 66, 22, .45)
+        b += cube(84, y + 12, 24, col, "fl", g)
+        b += f'<text x="128" y="{y + 36}" font-size="16" font-weight="800" fill="{light(col, .5)}" letter-spacing="1">{esc(title)}</text>'
+        for k, ln in enumerate(wrap(desc, 74)):
+            b += f'<text x="128" y="{y + 60 + k * 20}" font-size="13" fill="#cbd5e1">{esc(ln)}</text>'
+    fy = TOP + len(rows) * RH + 8
+    b += f'<rect x="30" y="{fy}" width="{W - 60}" height="44" rx="22" fill="#052e1b" fill-opacity=".8" stroke="#22c55e" stroke-opacity=".5"/>'
+    b += ('<text x="44" y="{0}" font-size="14" font-weight="700" fill="#86efac">Vanity metrics rot — but a daily-rebuilt city '
+          'cannot lie.</text>').format(fy + 28)
+    save("legend.svg", svg(W, H, "Field manual: how to read the living city, the language donut and the serpent",
+                            b, d, desc="How to read this battlefield. Vanity metrics rot; a daily-rebuilt city does not lie."))
+
+
+# =========================================================================
 # DOCTRINE, CTA, FOOTER
 # =========================================================================
 def build_doctrine():
@@ -757,6 +845,8 @@ if __name__ == "__main__":
     build_achievements()
     build_stack()
     build_journey()
+    build_portal()
+    build_legend()
 
     project_card("card-whisper.svg", 888, "Whisper", "REAL-TIME CHAT REALM",
                  "A real-time bilingual chat realm: fingerprint-locked vaults, an AI oracle, expiring stories "

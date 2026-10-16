@@ -94,20 +94,58 @@ const omar = {
 
 <div align="center">
 
+<img src="./assets/portal.svg" alt="Observation deck: you are looking at live data, not decoration. Every chart below rebuilds itself from the commit history." width="100%" />
+
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=omarmetman&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f172a&rank_icon=github&title_color=8b5cf6&icon_color=22d3ee&ring_color=8b5cf6" alt="GitHub stats" />
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omarmetman&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=8b5cf6" alt="Top languages" />
 
+<br />
+
+<sub>📊 <b>THE DOSSIER</b> — rank, total stars earned, commits, pull requests and the languages most used across every public repository. Recomputed live on every page load.</sub>
+
+<br /><br />
+
 <img src="https://streak-stats.demolab.com?user=omarmetman&theme=tokyonight&hide_border=true&background=0f172a&ring=8b5cf6&fire=f472b6&currStreakLabel=22d3ee" alt="Contribution streak" />
+
+<br />
+
+<sub>🔥 <b>THE STREAK</b> — consecutive days with at least one contribution. Consistency is the whole game: shipping a little every day beats heroic all-nighters.</sub>
+
+<br /><br />
+
+<img src="./assets/legend.svg" alt="Field manual: how to read the living city, the language donut and the serpent. Vanity metrics rot; a daily-rebuilt city does not lie." width="100%" />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
   <img src="./profile-3d-contrib/profile-green-animate.svg" alt="3D contribution graph" width="100%" />
 </picture>
 
+<sub>🗺️ <b>THE LIVING CITY</b> — one full year of work rendered as an isometric hologram and rebuilt <b>daily by a GitHub Actions satellite</b> (<code>.github/workflows/profile-3d.yml</code>). Each floor tile is a day, each tower is code shipped that day. The pentagon radar scores <b>Commit / Issue / Pull Request / Review / Repo</b>; the donut weighs the languages behind it all.</sub>
+
+<br /><br />
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/omarmetman/omarmetman/output/github-snake-dark.svg" />
   <img src="https://raw.githubusercontent.com/omarmetman/omarmetman/output/github-snake.svg" alt="A snake eating my contribution graph" width="100%" />
 </picture>
+
+<sub>🐍 <b>THE SERPENT</b> — the same contribution grid, devoured cell by cell and re-released every 12 hours (<code>.github/workflows/snake.yml</code>). It only moves where there is history — a long snake is proof of consistency no badge can fake.</sub>
+
+<br /><br />
+
+<img src="https://github-profile-trophy.vercel.app/?username=omarmetman&theme=tokyonight&no-frame=true&column=6&margin-w=10" alt="GitHub trophies" />
+
+<br />
+
+<sub>🏆 <b>THE TROPHY VAULT</b> — milestones unlocked: stars collected, repositories forged, followers gathered. Every trophy maps to something actually shipped.</sub>
+
+<br /><br />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=omarmetman&theme=tokyo-night&hide_border=true&bg_color=0f172a&color=8b5cf6&line=22d3ee&point=f472b6" alt="Contribution activity graph" width="100%" />
+
+<br />
+
+<sub>〰️ <b>THE PULSE</b> — 31 days of contribution frequency as one continuous heartbeat. Flat lines are silence; spikes are launch weeks.</sub>
 
 </div>
 
