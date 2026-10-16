@@ -163,6 +163,8 @@ const omar = {
 
 <a href="https://omarmetman.vercel.app/projects/whisper"><img src="./assets/card-whisper.svg" alt="Whisper: a real-time bilingual chat realm with fingerprint-locked vaults, an AI oracle, expiring stories and offline mode. Co-forged with Sara Waleed." width="100%" /></a>
 
+<sub>🌐 <a href="https://whisper-4th1.vercel.app/">Web version</a> · 📱 <a href="https://whisper-4th1.vercel.app/download">Download for Android</a> · 👩‍💻 Co-forged with <a href="https://github.com/sarahwaleedmmbadr">Sara Waleed</a></sub>
+
 <a href="https://devforge-download.vercel.app/"><img src="./assets/card-devforge.svg" alt="DevForge: an offline Windows workshop for developers, Rust and Tauri 2, fast and bilingual." width="49%" /></a>
 <a href="https://baseeraa.vercel.app/"><img src="./assets/card-baseeraa.svg" alt="Baseeraa: an interactive knowledge and culture platform with social dynamics." width="49%" /></a>
 
