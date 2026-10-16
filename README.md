@@ -4,8 +4,8 @@
 
 <br />
 
-<a href="https://omarmetman.vercel.app"><img src="https://img.shields.io/badge/ENTER_THE_LAB-omarmetman.vercel.app-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0f172a" alt="Portfolio"></a>
-<a href="https://t.me/omarmetman"><img src="https://img.shields.io/badge/SUMMON_ME-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0f172a" alt="Telegram"></a>
+<a href="https://omarmetman.vercel.app"><img src="./assets/btn-lab.svg" alt="Enter the lab: omarmetman.vercel.app" height="56" /></a>
+<a href="https://t.me/omarmetman"><img src="./assets/btn-summon.svg" alt="Summon me on Telegram" height="56" /></a>
 
 <br />
 
@@ -49,25 +49,25 @@ const omar = {
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/LANGUAGES-8b5cf6?style=flat-square" alt="Languages" /><br />
+<img src="./assets/lbl-languages.svg" alt="Languages" /><br />
 <img src="https://skillicons.dev/icons?i=js,ts,python,c,cpp,rust,dart,kotlin,swift&theme=dark" alt="JavaScript, TypeScript, Python, C, C++, Rust, Dart, Kotlin, Swift" />
 
-<img src="https://img.shields.io/badge/FRONTEND_%26_MOBILE-22d3ee?style=flat-square" alt="Frontend and mobile" /><br />
+<img src="./assets/lbl-frontend.svg" alt="Frontend and mobile" /><br />
 <img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,html,css,flutter,androidstudio&theme=dark" alt="React, Next.js, Vue, Tailwind CSS, HTML, CSS, Flutter, Android Studio" />
 
-<img src="https://img.shields.io/badge/BACKEND-f472b6?style=flat-square" alt="Backend" /><br />
+<img src="./assets/lbl-backend.svg" alt="Backend" /><br />
 <img src="https://skillicons.dev/icons?i=nodejs,express,django,fastapi,graphql&theme=dark" alt="Node.js, Express, Django, FastAPI, GraphQL" />
 
-<img src="https://img.shields.io/badge/DATA_%26_STORAGE-f59e0b?style=flat-square" alt="Data and storage" /><br />
+<img src="./assets/lbl-data.svg" alt="Data and storage" /><br />
 <img src="https://skillicons.dev/icons?i=firebase,mongodb,mysql,postgres,redis,sqlite&theme=dark" alt="Firebase, MongoDB, MySQL, PostgreSQL, Redis, SQLite" />
 
-<img src="https://img.shields.io/badge/DEVOPS_%26_CLOUD-06b6d4?style=flat-square" alt="DevOps and cloud" /><br />
+<img src="./assets/lbl-devops.svg" alt="DevOps and cloud" /><br />
 <img src="https://skillicons.dev/icons?i=docker,vercel,netlify,nginx,githubactions,bash&theme=dark" alt="Docker, Vercel, Netlify, Nginx, GitHub Actions, Bash" />
 
-<img src="https://img.shields.io/badge/TOOLS-22c55e?style=flat-square" alt="Tools" /><br />
+<img src="./assets/lbl-tools.svg" alt="Tools" /><br />
 <img src="https://skillicons.dev/icons?i=git,github,linux,vscode,postman,figma&theme=dark" alt="Git, GitHub, Linux, VS Code, Postman, Figma" />
 
-<img src="https://img.shields.io/badge/AI_IOT_%26_MAKER-a855f7?style=flat-square" alt="AI, IoT and maker" /><br />
+<img src="./assets/lbl-ai.svg" alt="AI, IoT and maker" /><br />
 <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,selenium,arduino,raspberrypi,tauri&theme=dark" alt="TensorFlow, PyTorch, Selenium, Arduino, Raspberry Pi, Tauri" />
 
 </div>
@@ -80,7 +80,10 @@ const omar = {
 
 <img src="./assets/stack.svg" alt="Full stack mastery: Frontend, Backend, Databases, DevOps, Specializations, Soft Skills, Systems and Embedded, Mobile — with proficiency levels from omarmetman.vercel.app" width="100%" />
 
-<sub>⚗️ The complete 53-skill arsenal lives on the <a href="https://omarmetman.vercel.app/about">about page</a> · <a href="https://omarmetman.vercel.app/stats">live stats</a></sub>
+<br />
+
+<a href="https://omarmetman.vercel.app/about"><img src="./assets/btn-arsenal.svg" alt="Full 53-skill arsenal" height="52" /></a>
+<a href="https://omarmetman.vercel.app/stats"><img src="./assets/btn-stats.svg" alt="Live stats" height="52" /></a>
 
 </div>
 
@@ -163,7 +166,9 @@ const omar = {
 
 <a href="https://omarmetman.vercel.app/projects/whisper"><img src="./assets/card-whisper.svg" alt="Whisper: a real-time bilingual chat realm with fingerprint-locked vaults, an AI oracle, expiring stories and offline mode. Co-forged with Sara Waleed." width="100%" /></a>
 
-<sub>🌐 <a href="https://whisper-4th1.vercel.app/">Web version</a> · 📱 <a href="https://whisper-4th1.vercel.app/download">Download for Android</a> · 👩‍💻 Co-forged with <a href="https://github.com/sarahwaleedmmbadr">Sara Waleed</a></sub>
+<a href="https://whisper-4th1.vercel.app/"><img src="./assets/btn-web.svg" alt="Whisper web version" height="52" /></a>
+<a href="https://whisper-4th1.vercel.app/download"><img src="./assets/btn-android.svg" alt="Download Whisper for Android" height="52" /></a>
+<a href="https://github.com/sarahwaleedmmbadr"><img src="./assets/btn-sara.svg" alt="Sara Waleed on GitHub" height="52" /></a>
 
 <a href="https://devforge-download.vercel.app/"><img src="./assets/card-devforge.svg" alt="DevForge: an offline Windows workshop for developers, Rust and Tauri 2, fast and bilingual." width="49%" /></a>
 <a href="https://baseeraa.vercel.app/"><img src="./assets/card-baseeraa.svg" alt="Baseeraa: an interactive knowledge and culture platform with social dynamics." width="49%" /></a>
@@ -173,7 +178,9 @@ const omar = {
 
 <a href="https://omarmetman.vercel.app/projects"><img src="./assets/card-archive.svg" alt="The full archive: 29 conquered projects, 16 client deliveries, 1 sold product and 64+ scrolls of knowledge." width="100%" /></a>
 
-<sub>📜 Read the <a href="https://omarmetman.vercel.app/blog">64+ scrolls of knowledge</a> · Explore the <a href="https://omarmetman.vercel.app/projects">29 conquered projects</a> · <a href="https://siraj-advice.vercel.app/">Siraj Advice — sold ✓</a></sub>
+<a href="https://omarmetman.vercel.app/blog"><img src="./assets/btn-blog.svg" alt="64+ articles" height="52" /></a>
+<a href="https://omarmetman.vercel.app/projects"><img src="./assets/btn-projects.svg" alt="29 projects" height="52" /></a>
+<a href="https://siraj-advice.vercel.app/"><img src="./assets/btn-siraj.svg" alt="Siraj Advice, sold" height="52" /></a>
 
 </div>
 
@@ -215,16 +222,13 @@ const omar = {
 
 <div align="center">
 
-<a href="https://t.me/omarmetman"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-<a href="https://t.me/omaretmanBOT"><img src="https://img.shields.io/badge/Bot-8b5cf6?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram bot"></a>
-<a href="https://www.linkedin.com/in/omar-m-etman"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-<a href="https://x.com/omarm3tman"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
-<a href="https://www.instagram.com/omarmetman"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
-<a href="mailto:omarmetman90@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-
-<br /><br />
-
-**Got a quest? → [Start a project](https://omarmetman.vercel.app/request)**
+<a href="https://t.me/omarmetman"><img src="./assets/btn-telegram.svg" alt="Telegram" height="52" /></a>
+<a href="https://t.me/omaretmanBOT"><img src="./assets/btn-bot.svg" alt="Telegram bot" height="52" /></a>
+<a href="https://www.linkedin.com/in/omar-m-etman"><img src="./assets/btn-linkedin.svg" alt="LinkedIn" height="52" /></a>
+<br />
+<a href="https://x.com/omarm3tman"><img src="./assets/btn-x.svg" alt="X" height="52" /></a>
+<a href="https://www.instagram.com/omarmetman"><img src="./assets/btn-instagram.svg" alt="Instagram" height="52" /></a>
+<a href="mailto:omarmetman90@gmail.com"><img src="./assets/btn-email.svg" alt="Email" height="52" /></a>
 
 <br />
 

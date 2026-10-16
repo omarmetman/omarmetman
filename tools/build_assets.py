@@ -751,6 +751,54 @@ def build_legend():
 
 
 # =========================================================================
+# BUTTONS — small 3D pill links (no plain-text links anywhere)
+# =========================================================================
+def _text_ink(accent):
+    r, g, bl = _rgb(accent)
+    lum = (0.299 * r + 0.587 * g + 0.114 * bl) / 255
+    return "#0b1020" if lum > 0.55 else "#ffffff"
+
+
+def button(fname, label, accent, gname=None, idp="btn", h=64, fs=20):
+    u = uid(idp)
+    pad = 30
+    gw = 58 if gname else 0
+    cw = fs * 0.62 + 2
+    w = int(len(label) * cw + pad * 2 + gw)
+    d = lg(f"{u}bg", [(0, light(accent, .12)), (.45, accent), (1, dark(accent, .38))], 0, 0, 0, 1)
+    d += lg(f"{u}bd", [(0, "#fff", .5), (1, "#fff", 0)], 0, 0, 0, 1)
+    H = h + 18
+    b = f'<ellipse cx="{w / 2}" cy="{h + 8}" rx="{w / 2 - 14}" ry="9" fill="#000" opacity=".45" filter="url(#b4)"/>'
+    b += f'<rect x="4" y="{12}" width="{w - 8}" height="{h}" rx="{h / 2}" fill="{dark(accent, .72)}"/>'
+    b += f'<rect x="4" y="4" width="{w - 8}" height="{h}" rx="{h / 2}" fill="url(#{u}bg)"/>'
+    b += f'<rect x="10" y="8" width="{w - 20}" height="{h // 3}" rx="{h // 6}" fill="#fff" opacity=".20"/>'
+    b += (f'<rect x="4.75" y="4.75" width="{w - 9.5}" height="{h - 1.5}" rx="{h / 2 - .5}" fill="none" '
+          f'stroke="url(#{u}bd)" stroke-width="1.5"/>')
+    ink = _text_ink(accent)
+    tx = w / 2 + (gw / 2 if gname else 0)
+    if gname:
+        b += shadow(34, h - 6, 15, .4)
+        b += cube(34, 8, 17, accent if ink == "#ffffff" else dark(accent, .3), "fl", gname)
+    b += (f'<text x="{tx:.1f}" y="{8 + h / 2 + fs * .36:.1f}" font-size="{fs}" font-weight="800" '
+          f'text-anchor="middle" letter-spacing="2" fill="{ink}">{esc(label)}</text>')
+    save(fname, svg(w, H, label, b, d))
+
+
+def label(fname, text, accent, idp="lbl", h=38, fs=17):
+    """Flat category tag: dark pill, accent bullet, letterspaced text."""
+    w = int(len(text) * (fs * 0.62 + 2.4) + 62)
+    H = h + 8
+    b = f'<ellipse cx="{w / 2}" cy="{h + 2}" rx="{w / 2 - 10}" ry="5" fill="#000" opacity=".4" filter="url(#b4)"/>'
+    b += f'<rect x="2" y="2" width="{w - 4}" height="{h}" rx="{h / 2}" fill="#0b1020" fill-opacity=".92"/>'
+    b += (f'<rect x="2.75" y="2.75" width="{w - 5.5}" height="{h - 1.5}" rx="{h / 2 - .5}" fill="none" '
+          f'stroke="{accent}" stroke-opacity=".6"/>')
+    b += f'<circle cx="26" cy="{2 + h / 2}" r="6" fill="{accent}"/>'
+    b += (f'<text x="{w / 2 + 8}" y="{2 + h / 2 + fs * .36:.1f}" font-size="{fs}" font-weight="800" '
+          f'text-anchor="middle" letter-spacing="2.4" fill="{light(accent, .45)}">{esc(text)}</text>')
+    save(fname, svg(w, H, text, b, ""))
+
+
+# =========================================================================
 # DOCTRINE, CTA, FOOTER
 # =========================================================================
 def build_doctrine():
@@ -889,3 +937,28 @@ if __name__ == "__main__":
     build_cta("cta.svg", "START A PROJECT  \u2192")
     build_doctrine()
     build_footer()
+
+    # link buttons (whisper / arsenal / archive / channels)
+    button("btn-web.svg", "WEB VERSION", CYAN, "web", "bw")
+    button("btn-android.svg", "ANDROID", GREEN, "offline", "ba")
+    button("btn-sara.svg", "SARA WALEED", PINK, "user", "bs")
+    button("btn-arsenal.svg", "FULL 53-SKILL ARSENAL", VIOLET, "layers", "bl")
+    button("btn-stats.svg", "LIVE STATS", AMBER, "bars", "bt")
+    button("btn-blog.svg", "64+ ARTICLES", PINK, "doc", "bb")
+    button("btn-projects.svg", "29 PROJECTS", VIOLET, "template", "bp")
+    button("btn-siraj.svg", "SIRAJ \u00b7 SOLD \u2713", AMBER, "star", "bj")
+    button("btn-telegram.svg", "TELEGRAM", TG, None, "bc0")
+    button("btn-bot.svg", "BOT", VIOLET, "bot", "bc1")
+    button("btn-linkedin.svg", "LINKEDIN", "#0a66c2", None, "bc2")
+    button("btn-x.svg", "X", "#e2e8f0", None, "bc3")
+    button("btn-instagram.svg", "INSTAGRAM", "#e4405f", None, "bc4")
+    button("btn-email.svg", "EMAIL", "#ea4335", None, "bc5")
+    button("btn-lab.svg", "ENTER THE LAB", VIOLET, "rocket", "bh0")
+    button("btn-summon.svg", "SUMMON ME", TG, "chat", "bh1")
+    label("lbl-languages.svg", "LANGUAGES", VIOLET, "ll0")
+    label("lbl-frontend.svg", "FRONTEND & MOBILE", CYAN, "ll1")
+    label("lbl-backend.svg", "BACKEND", PINK, "ll2")
+    label("lbl-data.svg", "DATA & STORAGE", AMBER, "ll3")
+    label("lbl-devops.svg", "DEVOPS & CLOUD", "#06b6d4", "ll4")
+    label("lbl-tools.svg", "TOOLS", GREEN, "ll5")
+    label("lbl-ai.svg", "AI, IOT & MAKER", "#a855f7", "ll6")

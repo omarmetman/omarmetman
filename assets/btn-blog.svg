@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="82" viewBox="0 0 290 82" role="img" aria-labelledby="t d">
+<title id="t">64+ ARTICLES</title>
+<desc id="d">64+ ARTICLES</desc>
+<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="bb7bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f583bf"/><stop offset="0.45" stop-color="#f472b6"/><stop offset="1" stop-color="#974771"/></linearGradient><linearGradient id="bb7bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<style>
+text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.m{font-family:'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes tw{0%,100%{opacity:.12}50%{opacity:.95}}
+@keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.4);opacity:0}}
+@keyframes sweep{0%{transform:translateX(-30%)}100%{transform:translateX(130%)}}
+@keyframes grow{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@keyframes rise{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
+.fl{animation:fl 5.5s ease-in-out infinite}
+.fl2{animation:fl 7s ease-in-out -2s infinite}
+.fl3{animation:fl 4.6s ease-in-out -1s infinite}
+.tw{animation:tw 3.4s ease-in-out infinite}
+.pr{transform-box:fill-box;transform-origin:center;animation:ring 2.2s ease-out infinite}
+.sw{animation:sweep 5s linear infinite}
+.sw2{animation:sweep 4s linear infinite}
+.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 2.2s .4s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<ellipse cx="145.0" cy="72" rx="131.0" ry="9" fill="#000" opacity=".45" filter="url(#b4)"/><rect x="4" y="12" width="282" height="64" rx="32.0" fill="#442033"/><rect x="4" y="4" width="282" height="64" rx="32.0" fill="url(#bb7bg)"/><rect x="10" y="8" width="270" height="21" rx="10" fill="#fff" opacity=".20"/><rect x="4.75" y="4.75" width="280.5" height="62.5" rx="31.5" fill="none" stroke="url(#bb7bd)" stroke-width="1.5"/><ellipse cx="34" cy="58" rx="15" ry="4.2" fill="#000" opacity="0.4" filter="url(#b4)"/><g class="fl"><polygon points="19.3,16.5 34.0,25.0 34.0,42.0 19.3,33.5" fill="#853e63"/><polygon points="34.0,25.0 48.7,16.5 48.7,33.5 34.0,42.0" fill="#562840"/><polygon points="34.0,8.0 48.7,16.5 34.0,25.0 19.3,16.5" fill="#c381a3"/><g transform="matrix(0.1472 0.0850 -0.1472 0.0850 34.00 8.00)"><path d="M20 6 H62 L82 26 V94 H20 Z" fill="#ffffff"/><path d="M62 6 V26 H82 Z" fill="#d19fb9"/><rect x="30" y="40" width="42" height="6" rx="3" fill="#ab507f"/><rect x="30" y="54" width="42" height="6" rx="3" fill="#ab507f"/><rect x="30" y="68" width="28" height="6" rx="3" fill="#ab507f"/></g><polyline points="19.3,16.5 34.0,8.0 48.7,16.5" fill="none" stroke="#ddb9cc" stroke-opacity=".55" stroke-width="1" stroke-linejoin="round"/></g><text x="174.0" y="47.2" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="2" fill="#0b1020">64+ ARTICLES</text>
+</svg>
