@@ -221,6 +221,48 @@ def glyph(name, accent):
         return (f'<circle cx="18" cy="82" r="8" fill="{fg}"/>'
                 f'<path d="M18 54 A28 28 0 0 1 46 82" {sw}/><path d="M18 30 A52 52 0 0 1 70 82" {sw}/>'
                 f'<path d="M18 8 A74 74 0 0 1 92 82" {sw}/>')
+    if name == "book":
+        return (
+            f'<path d="M50 8 C38 14 24 14 12 10 V86 C24 90 38 90 50 84 C62 90 76 90 88 86 V10 C76 14 62 14 50 8 Z" fill="{fg}"/>'
+            f'<line x1="50" y1="8" x2="50" y2="84" stroke="{accent}" stroke-width="5"/>'
+            + "".join(f'<line x1="20" y1="{y}" x2="42" y2="{y}" stroke="{accent}" stroke-width="4" stroke-linecap="round"/>'
+                      for y in (34, 46, 58))
+            + "".join(f'<line x1="58" y1="{y}" x2="80" y2="{y}" stroke="{accent}" stroke-width="4" stroke-linecap="round"/>'
+                      for y in (34, 46, 58))
+        )
+    if name == "rocket":
+        return (
+            f'<path d="M50 4 C74 20 80 48 66 70 L50 62 L34 70 C20 48 26 20 50 4 Z" fill="{fg}"/>'
+            f'<circle cx="50" cy="38" r="10" fill="{accent}"/>'
+            f'<path d="M34 70 L26 92 L42 78 Z" fill="{fg}"/><path d="M66 70 L74 92 L58 78 Z" fill="{fg}"/>'
+            f'<polygon points="46,92 54,92 50,100" fill="{fg}"/>'
+        )
+    if name == "api":
+        return (
+            f'<circle cx="50" cy="58" r="24" {sw}/>'
+            f'<line x1="50" y1="58" x2="50" y2="22" {sw}/><line x1="50" y1="58" x2="80" y2="36" {sw}/>'
+            f'<circle cx="50" cy="16" r="8" fill="{fg}"/><circle cx="86" cy="32" r="8" fill="{fg}"/>'
+            f'<circle cx="50" cy="58" r="7" fill="{fg}"/>'
+        )
+    if name == "compass":
+        return (
+            f'<circle cx="50" cy="50" r="42" {sw}/>'
+            f'<polygon points="50,20 60,50 50,80 40,50" fill="{fg}"/>'
+            f'<polygon points="50,20 60,50 40,50" fill="{accent}"/>'
+            f'<circle cx="50" cy="50" r="5" fill="{dk}"/>'
+        )
+    if name == "layers":
+        return (
+            f'<polygon points="50,8 90,30 50,52 10,30" fill="{fg}"/>'
+            f'<polygon points="10,50 50,72 90,50 90,60 50,82 10,60" fill="{fg}" opacity=".75"/>'
+            f'<polygon points="10,68 50,90 90,68 90,76 50,96 10,76" fill="{fg}" opacity=".5"/>'
+        )
+    if name == "route":
+        return (
+            f'<path d="M12 82 C30 82 30 60 48 60 C66 60 60 34 78 34 L88 34" {sw}/>'
+            f'<circle cx="12" cy="82" r="9" fill="{fg}"/><circle cx="88" cy="34" r="9" fill="{fg}"/>'
+            f'<circle cx="48" cy="60" r="6" fill="{fg}"/>'
+        )
     return ""
 
 
@@ -517,22 +559,106 @@ def build_character():
 
 def build_achievements():
     tw, gap, PH, D = 204, 24, 112, 12
-    W, H = 4 * tw + 3 * gap, PH + D + 14
-    tiles = [("5+", "YEARS IN PRODUCTION", VIOLET, "bars"), ("28+", "PROJECTS SHIPPED", CYAN, "template"),
-             ("60+", "TECHNICAL ARTICLES", PINK, "doc"), ("1", "PRODUCT SOLD", AMBER, "star")]
+    rows = [
+        [("5+", "YEARS IN PRODUCTION", VIOLET, "bars"), ("29", "PROJECTS SHIPPED", CYAN, "template"),
+         ("64+", "TECHNICAL ARTICLES", PINK, "doc"), ("1", "PRODUCT SOLD", AMBER, "star")],
+        [("10+", "BOTS DEPLOYED", TG, "bot"), ("100%", "SUCCESS RATE", GREEN, "signal"),
+         ("24+", "SITE PAGES, AR + EN", INDIGO, "web"), ("8", "SKILL DOMAINS", VIOLET, "layers")],
+    ]
+    W = 4 * tw + 3 * gap
+    RH = PH + D
+    H = 2 * RH + 20 + 14
     d, b = "", ""
-    for i, (num, label, col, g) in enumerate(tiles):
-        x = i * (tw + gap)
-        dd, s = slab(f"a{i}", x + 2, 4, tw - 4, PH, col, depth=D, rx=18)
-        d += dd
-        b += f'<g class="rise" style="animation-delay:{i * .12:.2f}s">' + s
-        b += ext_text(x + 24, 74, num, 50, 900, "start", depth=6, far=dark(col, .8), near=dark(col, .35),
-                      top=light(col, .55))
-        b += f'<text class="m" x="{x + 24}" y="100" font-size="10.5" letter-spacing="1.1" fill="{MUTED}" font-weight="700">{label}</text>'
-        b += cube(x + tw - 44, 20, 18, col, ["fl", "fl2", "fl3", "fl"][i], g)
-        b += "</g>"
-    save("achievements.svg", svg(W, H, "Achievements: 5+ years in production, 28+ projects shipped, 60+ technical articles, 1 product sold",
+    for r, tiles in enumerate(rows):
+        y0 = r * (RH + 20)
+        for i, (num, label, col, g) in enumerate(tiles):
+            x = i * (tw + gap)
+            dd, s = slab(f"a{r}{i}", x + 2, y0 + 4, tw - 4, PH, col, depth=D, rx=18)
+            d += dd
+            b += f'<g class="rise" style="animation-delay:{(r * 4 + i) * .1:.2f}s">' + s
+            b += ext_text(x + 24, y0 + 74, num, 50, 900, "start", depth=6, far=dark(col, .8), near=dark(col, .35),
+                          top=light(col, .55))
+            b += f'<text class="m" x="{x + 24}" y="{y0 + 100}" font-size="10.5" letter-spacing="1.1" fill="{MUTED}" font-weight="700">{label}</text>'
+            b += cube(x + tw - 44, y0 + 20, 18, col, ["fl", "fl2", "fl3", "fl"][i], g)
+            b += "</g>"
+    save("achievements.svg", svg(W, H, "Achievements: 5+ years, 29 projects shipped, 64+ technical articles, 1 product sold, "
+                                      "10+ bots deployed, 100% success rate, 24+ site pages, 8 skill domains",
                                  b, d))
+
+
+# =========================================================================
+# FULL STACK MASTERY (mirrors the 8 TECH_STACK domains on omarmetman.vercel.app)
+# =========================================================================
+STACK_CATS = [
+    ("Frontend", CYAN, [("HTML5 / CSS3", 95, "5y"), ("JavaScript ES6+", 90, "5y"), ("Tailwind CSS", 90, "3y")]),
+    ("Backend", GREEN, [("Telegram Bot API", 95, "4y"), ("Python", 90, "4y"), ("RESTful APIs", 90, "4y")]),
+    ("Databases", AMBER, [("Firebase", 88, "3y"), ("SQLite", 88, "2y"), ("MySQL", 86, "3y")]),
+    ("DevOps & Tools", INDIGO, [("Git / GitHub", 92, "5y"), ("Vercel", 88, "3y"), ("Linux / Bash", 87, "4y")]),
+    ("Specializations", PINK, [("Telegram Bots", 95, "4y"), ("Business Automation", 90, "4y"), ("AI Integration", 88, "2y")]),
+    ("Soft Skills", CYAN, [("Problem Solving", 95, "5y"), ("Fast Delivery", 93, "5y"), ("Self-Learning", 92, "5y")]),
+    ("Systems & Embedded", "#f97316", [("C++", 87, "3y"), ("Arduino", 87, "3y"), ("ESP32", 85, "2y")]),
+    ("Mobile", VIOLET, [("Flutter", 87, "2y"), ("Firebase Push", 87, "2y"), ("Dart", 86, "2y")]),
+]
+
+
+def build_stack():
+    W, D = 888, 12
+    COLW, VGAP, PAD = 432, 16, 20
+    BH = 30 + 3 * 32 + 14
+    PH = PAD + 4 * BH + 3 * VGAP
+    H = PH + D + 10
+    d, b = slab("st", 4, 4, W - 8, PH, VIOLET, depth=D, rx=22)
+    d += lg("stbar", [(0, "#1e2547"), (1, "#1e2547")])
+    for idx, (cat, col, skills) in enumerate(STACK_CATS):
+        col_i, row = idx % 2, idx // 2
+        x0 = 28 + col_i * (COLW + VGAP)
+        y0 = PAD + row * (BH + VGAP)
+        b += f'<rect x="{x0}" y="{y0 + 4}" width="14" height="14" rx="4" fill="{col}"/>'
+        b += f'<text x="{x0 + 22}" y="{y0 + 17}" font-size="15" font-weight="800" fill="#fff" letter-spacing="1">{esc(cat)}</text>'
+        for j, (name, lvl, yrs) in enumerate(skills):
+            ry = y0 + 30 + j * 32
+            b += f'<text x="{x0}" y="{ry + 12}" font-size="12.5" fill="#cbd5e1">{esc(name)}</text>'
+            b += f'<text class="m" x="{x0 + COLW - 44}" y="{ry + 12}" font-size="11" text-anchor="end" fill="{MUTED}">{yrs}</text>'
+            bx, bw = x0 + 150, COLW - 150 - 52
+            b += f'<rect x="{bx}" y="{ry}" width="{bw}" height="11" rx="5.5" fill="#1e2547"/>'
+            b += f'<rect class="grow" x="{bx}" y="{ry}" width="{bw * lvl / 100:.1f}" height="11" rx="5.5" fill="{col}"/>'
+            b += f'<rect x="{bx + 2}" y="{ry + 1.5}" width="{bw * lvl / 100 - 4:.1f}" height="3" rx="1.5" fill="#fff" opacity=".25"/>'
+            b += f'<text class="m" x="{bx + bw + 6}" y="{ry + 11}" font-size="11.5" font-weight="800" fill="{light(col, .5)}">{lvl}%</text>'
+    save("stack.svg", svg(W, H, "Full stack mastery: 8 skill domains with proficiency levels from omarmetman.vercel.app",
+                           b, d, desc="Frontend, Backend, Databases, DevOps, Specializations, Soft Skills, Systems and Embedded, Mobile."))
+
+
+# =========================================================================
+# ODYSSEY — experience timeline 2021 -> 2026 + education
+# =========================================================================
+def build_journey():
+    W, D = 888, 12
+    steps = [
+        ("2021-2022", "Getting Started", "HTML, CSS, basic JavaScript and the first simple projects.", VIOLET),
+        ("2023", "Leveling Up", "React, Node.js, first professional projects and Telegram bots.", CYAN),
+        ("2024", "Going Pro", "13+ client projects, Next.js, Firebase and AI integration.", PINK),
+        ("2025-2026", "Specialization", "Full-stack AI, a 24-page site, 64+ articles and full automation.", GREEN),
+        ("EDU", "Mechatronics Engineering", "Delta University, Sophomore. First-year Smart Garage: Arduino, fingerprint, WebSocket remote.", AMBER),
+    ]
+    RH, TOP = 92, 20
+    PH = TOP + len(steps) * RH + 8
+    H = PH + D + 10
+    SX = 190
+    d, b = slab("jo", 4, 4, W - 8, PH, CYAN, depth=D, rx=22)
+    b += f'<line x1="{SX}" y1="{TOP + 10}" x2="{SX}" y2="{TOP + len(steps) * RH - 10}" stroke="#334155" stroke-width="3"/>'
+    for i, (yr, title, desc, col) in enumerate(steps):
+        y = TOP + i * RH
+        cy = y + RH / 2
+        b += f'<circle cx="{SX}" cy="{cy}" r="13" fill="{dark(col, .7)}"/><circle cx="{SX}" cy="{cy}" r="7" fill="{col}"/>'
+        b += f'<line x1="60" y1="{cy - 2}" x2="{SX - 20}" y2="{cy - 2}" stroke="{col}" stroke-opacity=".4" stroke-width="1.5"/>'
+        m, _ = pill(28, cy - 26, yr, col, size=11, h=24)
+        b += m
+        b += f'<text x="{SX + 28}" y="{cy - 8}" font-size="18" font-weight="800" fill="#fff">{esc(title)}</text>'
+        for k, ln in enumerate(wrap(desc, 62)):
+            b += f'<text x="{SX + 28}" y="{cy + 16 + k * 20}" font-size="13.5" fill="#94a3b8">{esc(ln)}</text>'
+    save("journey.svg", svg(W, H, "Odyssey: experience timeline 2021 to 2026 plus Mechatronics Engineering education",
+                             b, d, desc="Getting Started 2021-2022, Leveling Up 2023, Going Pro 2024, Specialization 2025-2026, "
+                                        "Mechatronics Engineering at Delta University."))
 
 
 # =========================================================================
@@ -619,6 +745,8 @@ if __name__ == "__main__":
 
     build_section("section-character.svg", "CHARACTER SHEET", "// about.me", "user")
     build_section("section-arsenal.svg", "ARSENAL", "// skills.unlock()", "web", VIOLET, CYAN)
+    build_section("section-stack.svg", "FULL ARSENAL", "// stack.mastery()", "layers", CYAN, GREEN)
+    build_section("section-journey.svg", "ODYSSEY", "// journey.log()", "route", GREEN, AMBER)
     build_section("section-record.svg", "BATTLE RECORD", "// github.stats()", "bars", CYAN, VIOLET)
     build_section("section-builds.svg", "LEGENDARY BUILDS", "// projects.showcase()", "star", PINK, VIOLET)
     build_section("section-quests.svg", "QUEST BOARD", "// hire.me()", "doc", GREEN, CYAN)
@@ -627,17 +755,19 @@ if __name__ == "__main__":
 
     build_character()
     build_achievements()
+    build_stack()
+    build_journey()
 
     project_card("card-whisper.svg", 888, "Whisper", "REAL-TIME CHAT REALM",
                  "A real-time bilingual chat realm: fingerprint-locked vaults, an AI oracle, expiring stories "
                  "and offline mode. Co-forged with Sara Waleed.",
                  ["Realtime", "Bilingual", "AI oracle", "Offline mode"], VIOLET, "chat", "ENTER  \u2192", flag=True, idp="p0")
-    project_card("card-wa-radar.svg", 432, "WA-Radar-Serverr", "HEADLESS SERVER",
-                 "A headless sentinel that intercepts deleted WhatsApp messages and relays them to Telegram.",
-                 ["Headless", "WhatsApp", "Telegram"], GREEN, "radar", "REPO  \u2197", idp="p1")
-    project_card("card-devfolio.svg", 432, "devfolio-template", "PORTFOLIO TEMPLATE",
-                 "A premium portfolio forge: dark theme, glassmorphism and Telegram integration.",
-                 ["Dark UI", "Glassmorphism", "Telegram"], PINK, "template", "REPO  \u2197", idp="p2")
+    project_card("card-devforge.svg", 432, "DevForge", "OFFLINE DEV WORKSHOP",
+                 "An offline Windows workshop for developers: projects, commands and monitoring in one fast bilingual app.",
+                 ["Rust", "Tauri 2", "Offline"], INDIGO, "rocket", "GET  \u2192", idp="p1")
+    project_card("card-baseeraa.svg", 432, "Baseeraa", "KNOWLEDGE PLATFORM",
+                 "An interactive knowledge and culture platform: psychology, philosophy and science with social dynamics.",
+                 ["Next.js", "Firebase", "Community"], PINK, "book", "ENTER  \u2192", idp="p2")
     project_card("card-sirat.svg", 432, "Sirat-E-Mustaqeem", "ISLAMIC APP",
                  "A free, ad-free sanctuary: Quran, Athkar and prayer times.",
                  ["Quran", "Athkar", "Prayer times"], AMBER, "crescent", "ENTER  \u2192", idp="p3")
@@ -645,8 +775,8 @@ if __name__ == "__main__":
                  "An offline vault for personal finance: bilingual, with zero accounts.",
                  ["Offline", "Bilingual", "No accounts"], CYAN, "wallet", "ENTER  \u2192", idp="p4")
     project_card("card-archive.svg", 888, "The Full Archive", "MORE FROM THE LAB",
-                 "28+ conquered projects and 60+ scrolls of knowledge, all in one place.",
-                 ["Projects", "Articles"], INDIGO, "doc", "EXPLORE  \u2192", idp="p5")
+                 "29 conquered projects, 16 client deliveries, 1 sold product and 64+ scrolls of knowledge.",
+                 ["Projects", "Articles", "Case studies"], INDIGO, "doc", "EXPLORE  \u2192", idp="p5")
 
     quest_card("quest-bots.svg", "Telegram Bots",
                "Custom bots, automations and integrations. My special attack.", TG, "bot", "q0")
@@ -658,8 +788,12 @@ if __name__ == "__main__":
                "Apps that stay fast and useful with no connection at all.", AMBER, "offline", "q3")
     quest_card("quest-iot.svg", "IoT Systems",
                "Mechatronics meets software: connected hardware that talks to the cloud.", GREEN, "iot", "q4")
+    quest_card("quest-api.svg", "API Development",
+               "Robust RESTful and GraphQL APIs that connect systems seamlessly.", INDIGO, "api", "q6")
+    quest_card("quest-consult.svg", "Tech Consulting",
+               "Stack decisions, architecture reviews and code audits.", CYAN, "compass", "q7")
     quest_card("quest-writing.svg", "Technical Writing",
-               "60+ articles sharing what I learn while shipping.", CYAN, "doc", "q5")
+               "64+ articles sharing what I learn while shipping.", CYAN, "doc", "q5")
 
     build_cta("cta.svg", "START A PROJECT  \u2192")
     build_doctrine()

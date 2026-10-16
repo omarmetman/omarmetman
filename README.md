@@ -21,7 +21,7 @@
 
 <img src="./assets/character.svg" alt="Origin: Mansoura, Egypt. Class: Full Stack Software Developer. Level: 5+ years in production. Education: Mechatronics Engineering at Delta University. Special attack: Telegram Bots, 95% mastery. Side quests: AI chatbots, offline-first mobile apps, IoT systems." width="100%" />
 
-<img src="./assets/achievements.svg" alt="5+ years in production, 28+ projects shipped, 60+ technical articles, 1 product sold" width="100%" />
+<img src="./assets/achievements.svg" alt="5+ years in production, 29 projects shipped, 64+ technical articles, 1 product sold, 10+ bots deployed, 100% success rate, 24+ site pages, 8 skill domains" width="100%" />
 
 </div>
 
@@ -36,7 +36,7 @@ const omar = {
   education: "Mechatronics Engineering @ Delta University",
   specialAttack: "Telegram Bots (95% mastery)",
   sideQuests: ["AI chatbots", "Offline-first mobile apps", "IoT systems"],
-  achievements: ["60+ technical articles", "28+ projects shipped", "1 sold product"],
+  achievements: ["64+ technical articles", "29 projects shipped", "1 sold product"],
   status: "OPEN FOR FREELANCE QUESTS ⚔️"
 };
 ```
@@ -50,19 +50,41 @@ const omar = {
 <div align="center">
 
 <img src="https://img.shields.io/badge/LANGUAGES-8b5cf6?style=flat-square" alt="Languages" /><br />
-<img src="https://skillicons.dev/icons?i=js,ts,python,html,css&theme=dark" alt="JavaScript, TypeScript, Python, HTML, CSS" />
+<img src="https://skillicons.dev/icons?i=js,ts,python,c,cpp,rust,dart,html,css&theme=dark" alt="JavaScript, TypeScript, Python, C, C++, Rust, Dart, HTML, CSS" />
 
-<img src="https://img.shields.io/badge/FRONTEND-22d3ee?style=flat-square" alt="Frontend" /><br />
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind&theme=dark" alt="React, Next.js, Tailwind CSS" />
+<img src="https://img.shields.io/badge/FRONTEND_%26_MOBILE-22d3ee?style=flat-square" alt="Frontend and mobile" /><br />
+<img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,flutter&theme=dark" alt="React, Next.js, Vue, Tailwind CSS, Flutter" />
 
 <img src="https://img.shields.io/badge/BACKEND-f472b6?style=flat-square" alt="Backend" /><br />
-<img src="https://skillicons.dev/icons?i=nodejs,express&theme=dark" alt="Node.js, Express" />
+<img src="https://skillicons.dev/icons?i=nodejs,express,django,fastapi&theme=dark" alt="Node.js, Express, Django, FastAPI" />
 
 <img src="https://img.shields.io/badge/DATA_%26_CLOUD-f59e0b?style=flat-square" alt="Data and cloud" /><br />
-<img src="https://skillicons.dev/icons?i=firebase,mongodb,docker,vercel&theme=dark" alt="Firebase, MongoDB, Docker, Vercel" />
+<img src="https://skillicons.dev/icons?i=firebase,mongodb,mysql,postgres,redis,sqlite,docker,vercel&theme=dark" alt="Firebase, MongoDB, MySQL, PostgreSQL, Redis, SQLite, Docker, Vercel" />
 
 <img src="https://img.shields.io/badge/TOOLS-22c55e?style=flat-square" alt="Tools" /><br />
 <img src="https://skillicons.dev/icons?i=git,linux,vscode&theme=dark" alt="Git, Linux, VS Code" />
+
+</div>
+
+<br />
+
+<img src="./assets/section-stack.svg" alt="Full Arsenal" width="100%" />
+
+<div align="center">
+
+<img src="./assets/stack.svg" alt="Full stack mastery: Frontend, Backend, Databases, DevOps, Specializations, Soft Skills, Systems and Embedded, Mobile — with proficiency levels from omarmetman.vercel.app" width="100%" />
+
+<sub>⚗️ The complete 53-skill arsenal lives on the <a href="https://omarmetman.vercel.app/about">about page</a> · <a href="https://omarmetman.vercel.app/stats">live stats</a></sub>
+
+</div>
+
+<br />
+
+<img src="./assets/section-journey.svg" alt="Odyssey" width="100%" />
+
+<div align="center">
+
+<img src="./assets/journey.svg" alt="Odyssey: Getting Started 2021-2022, Leveling Up 2023, Going Pro 2024 with 13+ client projects, Specialization 2025-2026, Mechatronics Engineering at Delta University" width="100%" />
 
 </div>
 
@@ -97,15 +119,15 @@ const omar = {
 
 <a href="https://omarmetman.vercel.app/projects/whisper"><img src="./assets/card-whisper.svg" alt="Whisper: a real-time bilingual chat realm with fingerprint-locked vaults, an AI oracle, expiring stories and offline mode. Co-forged with Sara Waleed." width="100%" /></a>
 
-<a href="https://github.com/omarmetman/WA-Radar-Serverr"><img src="./assets/card-wa-radar.svg" alt="WA-Radar-Serverr: a headless sentinel that intercepts deleted WhatsApp messages and relays them to Telegram." width="49%" /></a>
-<a href="https://github.com/omarmetman/devfolio-template"><img src="./assets/card-devfolio.svg" alt="devfolio-template: a premium portfolio forge with a dark theme, glassmorphism and Telegram integration." width="49%" /></a>
+<a href="https://devforge-download.vercel.app/"><img src="./assets/card-devforge.svg" alt="DevForge: an offline Windows workshop for developers, Rust and Tauri 2, fast and bilingual." width="49%" /></a>
+<a href="https://baseeraa.vercel.app/"><img src="./assets/card-baseeraa.svg" alt="Baseeraa: an interactive knowledge and culture platform with social dynamics." width="49%" /></a>
 
 <a href="https://omarmetman.vercel.app/projects/sirat"><img src="./assets/card-sirat.svg" alt="Sirat-E-Mustaqeem: a free, ad-free sanctuary with Quran, Athkar and prayer times." width="49%" /></a>
 <a href="https://omarmetman.vercel.app/projects/etman-finance"><img src="./assets/card-finance.svg" alt="Etman Finance: an offline vault for personal finance, bilingual, with zero accounts." width="49%" /></a>
 
-<a href="https://omarmetman.vercel.app/projects"><img src="./assets/card-archive.svg" alt="The full archive: 28+ conquered projects and 60+ scrolls of knowledge." width="100%" /></a>
+<a href="https://omarmetman.vercel.app/projects"><img src="./assets/card-archive.svg" alt="The full archive: 29 conquered projects, 16 client deliveries, 1 sold product and 64+ scrolls of knowledge." width="100%" /></a>
 
-<sub>📜 Read the <a href="https://omarmetman.vercel.app/blog">60+ scrolls of knowledge</a> · Explore the <a href="https://omarmetman.vercel.app/projects">28+ conquered projects</a></sub>
+<sub>📜 Read the <a href="https://omarmetman.vercel.app/blog">64+ scrolls of knowledge</a> · Explore the <a href="https://omarmetman.vercel.app/projects">29 conquered projects</a> · <a href="https://siraj-advice.vercel.app/">Siraj Advice — sold ✓</a></sub>
 
 </div>
 
@@ -122,7 +144,10 @@ const omar = {
 <a href="https://omarmetman.vercel.app/request"><img src="./assets/quest-mobile.svg" alt="Offline-first Apps: fast and useful with no connection" width="49%" /></a>
 
 <a href="https://omarmetman.vercel.app/request"><img src="./assets/quest-iot.svg" alt="IoT Systems: connected hardware that talks to the cloud" width="49%" /></a>
-<a href="https://omarmetman.vercel.app/request"><img src="./assets/quest-writing.svg" alt="Technical Writing: 60+ articles" width="49%" /></a>
+<a href="https://omarmetman.vercel.app/request"><img src="./assets/quest-api.svg" alt="API Development: robust RESTful and GraphQL APIs" width="49%" /></a>
+
+<a href="https://omarmetman.vercel.app/request"><img src="./assets/quest-consult.svg" alt="Tech Consulting: stack decisions and architecture reviews" width="49%" /></a>
+<a href="https://omarmetman.vercel.app/request"><img src="./assets/quest-writing.svg" alt="Technical Writing: 64+ articles" width="49%" /></a>
 
 <a href="https://omarmetman.vercel.app/request"><img src="./assets/cta.svg" alt="Start a project" width="360" /></a>
 
