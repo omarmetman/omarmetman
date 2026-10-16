@@ -717,10 +717,11 @@ def build_legend():
     rows = [
         ("THE LIVING CITY", "The isometric hologram is a full year of GitHub, rebuilt daily: every floor tile is one "
          "day, every tower is code shipped that day. The pentagon radar scores 5 dimensions — Commit, Issue, "
-         "Pull Request, Review, Repo — and the donut weighs the languages that forged it all.",
+         "Pull Request, Review, Repo. Pure proof of work, with no language labels by design.",
          CYAN, "layers"),
-        ("THE LANGUAGE DONUT", "JavaScript, HTML, Python, TypeScript — this is not decoration. It is the exact share "
-         "of code written across every public repository, recomputed on every single render.",
+        ("THE LANGUAGE MIX", "The top-languages card counts code across every public repository, live on every "
+         "render — it is a GitHub snapshot, not the whole story. The full 53-skill arsenal with mastery levels "
+         "lives up in the Full Arsenal section.",
          PINK, "compass"),
         ("THE SERPENT", "A snake that eats the contribution grid, cell by cell. It only moves where there is history "
          "to devour — so a long snake is proof of consistency, the one statistic that cannot be faked.",
@@ -745,7 +746,7 @@ def build_legend():
     b += f'<rect x="30" y="{fy}" width="{W - 60}" height="44" rx="22" fill="#052e1b" fill-opacity=".8" stroke="#22c55e" stroke-opacity=".5"/>'
     b += ('<text x="44" y="{0}" font-size="14" font-weight="700" fill="#86efac">Vanity metrics rot — but a daily-rebuilt city '
           'cannot lie.</text>').format(fy + 28)
-    save("legend.svg", svg(W, H, "Field manual: how to read the living city, the language donut and the serpent",
+    save("legend.svg", svg(W, H, "Field manual: how to read the living city, the language mix and the serpent",
                             b, d, desc="How to read this battlefield. Vanity metrics rot; a daily-rebuilt city does not lie."))
 
 

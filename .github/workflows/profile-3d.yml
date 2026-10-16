@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 18 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "profile-3d-settings.json"
+      - ".github/workflows/profile-3d.yml"
 
 permissions:
   contents: write
@@ -15,10 +20,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+      - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: profile-3d-settings.json
 
       - name: Commit & push
         run: |

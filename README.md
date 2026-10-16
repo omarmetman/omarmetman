@@ -50,19 +50,25 @@ const omar = {
 <div align="center">
 
 <img src="https://img.shields.io/badge/LANGUAGES-8b5cf6?style=flat-square" alt="Languages" /><br />
-<img src="https://skillicons.dev/icons?i=js,ts,python,c,cpp,rust,dart,html,css&theme=dark" alt="JavaScript, TypeScript, Python, C, C++, Rust, Dart, HTML, CSS" />
+<img src="https://skillicons.dev/icons?i=js,ts,python,c,cpp,rust,dart,kotlin,swift&theme=dark" alt="JavaScript, TypeScript, Python, C, C++, Rust, Dart, Kotlin, Swift" />
 
 <img src="https://img.shields.io/badge/FRONTEND_%26_MOBILE-22d3ee?style=flat-square" alt="Frontend and mobile" /><br />
-<img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,flutter&theme=dark" alt="React, Next.js, Vue, Tailwind CSS, Flutter" />
+<img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,html,css,flutter,androidstudio&theme=dark" alt="React, Next.js, Vue, Tailwind CSS, HTML, CSS, Flutter, Android Studio" />
 
 <img src="https://img.shields.io/badge/BACKEND-f472b6?style=flat-square" alt="Backend" /><br />
-<img src="https://skillicons.dev/icons?i=nodejs,express,django,fastapi&theme=dark" alt="Node.js, Express, Django, FastAPI" />
+<img src="https://skillicons.dev/icons?i=nodejs,express,django,fastapi,graphql&theme=dark" alt="Node.js, Express, Django, FastAPI, GraphQL" />
 
-<img src="https://img.shields.io/badge/DATA_%26_CLOUD-f59e0b?style=flat-square" alt="Data and cloud" /><br />
-<img src="https://skillicons.dev/icons?i=firebase,mongodb,mysql,postgres,redis,sqlite,docker,vercel&theme=dark" alt="Firebase, MongoDB, MySQL, PostgreSQL, Redis, SQLite, Docker, Vercel" />
+<img src="https://img.shields.io/badge/DATA_%26_STORAGE-f59e0b?style=flat-square" alt="Data and storage" /><br />
+<img src="https://skillicons.dev/icons?i=firebase,mongodb,mysql,postgres,redis,sqlite&theme=dark" alt="Firebase, MongoDB, MySQL, PostgreSQL, Redis, SQLite" />
+
+<img src="https://img.shields.io/badge/DEVOPS_%26_CLOUD-06b6d4?style=flat-square" alt="DevOps and cloud" /><br />
+<img src="https://skillicons.dev/icons?i=docker,vercel,netlify,nginx,githubactions,bash&theme=dark" alt="Docker, Vercel, Netlify, Nginx, GitHub Actions, Bash" />
 
 <img src="https://img.shields.io/badge/TOOLS-22c55e?style=flat-square" alt="Tools" /><br />
-<img src="https://skillicons.dev/icons?i=git,linux,vscode&theme=dark" alt="Git, Linux, VS Code" />
+<img src="https://skillicons.dev/icons?i=git,github,linux,vscode,postman,figma&theme=dark" alt="Git, GitHub, Linux, VS Code, Postman, Figma" />
+
+<img src="https://img.shields.io/badge/AI_IOT_%26_MAKER-a855f7?style=flat-square" alt="AI, IoT and maker" /><br />
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,selenium,arduino,raspberrypi,tauri&theme=dark" alt="TensorFlow, PyTorch, Selenium, Arduino, Raspberry Pi, Tauri" />
 
 </div>
 
@@ -113,14 +119,14 @@ const omar = {
 
 <br /><br />
 
-<img src="./assets/legend.svg" alt="Field manual: how to read the living city, the language donut and the serpent. Vanity metrics rot; a daily-rebuilt city does not lie." width="100%" />
+<img src="./assets/legend.svg" alt="Field manual: how to read the living city, the language mix and the serpent. Vanity metrics rot; a daily-rebuilt city does not lie." width="100%" />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
-  <img src="./profile-3d-contrib/profile-green-animate.svg" alt="3D contribution graph" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/city-night.svg" />
+  <img src="./profile-3d-contrib/city-day.svg" alt="3D contribution city without language donut" width="100%" />
 </picture>
 
-<sub>🗺️ <b>THE LIVING CITY</b> — one full year of work rendered as an isometric hologram and rebuilt <b>daily by a GitHub Actions satellite</b> (<code>.github/workflows/profile-3d.yml</code>). Each floor tile is a day, each tower is code shipped that day. The pentagon radar scores <b>Commit / Issue / Pull Request / Review / Repo</b>; the donut weighs the languages behind it all.</sub>
+<sub>🗺️ <b>THE LIVING CITY</b> — one full year of work rendered as an isometric hologram and rebuilt <b>daily by a GitHub Actions satellite</b> (<code>.github/workflows/profile-3d.yml</code>). Each floor tile is a day, each tower is code shipped that day. The pentagon radar scores <b>Commit / Issue / Pull Request / Review / Repo</b> — pure proof of work, with no language labels by design. The full arsenal lives in the sections above.</sub>
 
 <br /><br />
 
