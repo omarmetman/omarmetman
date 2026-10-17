@@ -2,9 +2,9 @@
 
 <img src="./assets/header.svg" alt="Omar M. Etman, Software Engineer from Planet Earth, currently operating at full stack" width="100%" />
 
-<br />
+<br /><br />
 
-<img src="https://komarev.com/ghpvc/?username=omarmetman&color=8b5cf6&style=flat-square&label=WITNESSES" alt="Profile views" />
+<a href="https://github.com/omarmetman/omarmetman"><img src="./assets/btn-view-profile.svg" alt="View profile on GitHub: the full record, 29 projects and 64+ articles" height="72" /></a>
 
 <br />
 
@@ -13,7 +13,7 @@
 
 </div>
 
-<br />
+<br /><br />
 
 <img src="./assets/section-character.svg" alt="Character Sheet" width="100%" />
 
@@ -43,7 +43,7 @@ const omar = {
 
 </details>
 
-<br />
+<br /><br />
 
 <img src="./assets/section-arsenal.svg" alt="Arsenal" width="100%" />
 
@@ -72,7 +72,7 @@ const omar = {
 
 </div>
 
-<br />
+<br /><br />
 
 <img src="./assets/section-stack.svg" alt="Full Arsenal" width="100%" />
 
@@ -91,7 +91,7 @@ const omar = {
 
 </div>
 
-<br />
+<br /><br />
 
 <img src="./assets/section-journey.svg" alt="Odyssey" width="100%" />
 
@@ -101,7 +101,7 @@ const omar = {
 
 </div>
 
-<br />
+<br /><br />
 
 <img src="./assets/section-record.svg" alt="Battle Record" width="100%" />
 
@@ -131,8 +131,6 @@ const omar = {
 
 <br /><br />
 
-<br /><br />
-
 <img src="./assets/legend.svg" alt="Field manual: how to read the living city, the language mix and the serpent. Vanity metrics rot; a daily-rebuilt city does not lie." width="100%" />
 
 <picture>
@@ -153,7 +151,7 @@ const omar = {
 
 </div>
 
-<br />
+<br /><br />
 
 <img src="./assets/section-builds.svg" alt="Legendary Builds" width="100%" />
 
@@ -179,7 +177,7 @@ const omar = {
 
 </div>
 
-<br />
+<br /><br />
 
 <img src="./assets/section-quests.svg" alt="Quest Board" width="100%" />
 
@@ -201,7 +199,7 @@ const omar = {
 
 </div>
 
-<br />
+<br /><br />
 
 <img src="./assets/section-doctrine.svg" alt="Combat Doctrine" width="100%" />
 
@@ -211,7 +209,7 @@ const omar = {
 
 </div>
 
-<br />
+<br /><br />
 
 <img src="./assets/section-channels.svg" alt="Transmission Channels" width="100%" />
 
@@ -225,7 +223,7 @@ const omar = {
 <a href="https://www.instagram.com/omarmetman"><img src="./assets/btn-instagram.svg" alt="Instagram" height="52" /></a>
 <a href="mailto:omarmetman90@gmail.com"><img src="./assets/btn-email.svg" alt="Email" height="52" /></a>
 
-<br />
+<br /><br />
 
 <img src="./assets/footer.svg" alt="Forged in Mansoura, deployed to the world" width="100%" />
 

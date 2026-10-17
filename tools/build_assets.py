@@ -788,6 +788,57 @@ def button(fname, label, accent, gname=None, idp="btn", h=64, fs=20):
     save(fname, svg(w, H, label, b, d))
 
 
+def profile_button(fname, label, accent, idp="prf", h=70, fs=21, accent2=None):
+    """Hero CTA: extruded pill, breathing halo, shimmer sweep, floating glyph cube.
+
+    Deliberately louder than `button()` — this is the one primary action in the hero,
+    so it gets its own keyframes instead of reusing the shared ones.
+    """
+    u = uid(idp)
+    acc2 = accent2 or dark(accent, .35)
+    s = 22                                          # glyph cube edge
+    gw = s * 0.866 * 2                              # glyph visual width
+    gap = 16
+    text_w = len(label) * (fs * 0.66 + 2.2) + 6     # ~advance + letter-spacing
+    content = gw + gap + text_w
+    edge = 34                                       # pill edge -> content
+    w = int(content + edge * 2)
+    H = h + 30
+    # margin so the halo/shadow are not sliced by the SVG viewport
+    MX, MY = 18, 14
+    top = 8
+    mid = top + h / 2
+    ink = _text_ink(accent)
+    # centre glyph and text as one group so the label reads balanced
+    left = (w - content) / 2
+    gcx = left + gw / 2
+    gcy = mid - s
+    tx = left + gw + gap + text_w / 2
+    d = lg(f"{u}bg", [(0, light(accent, .34)), (.40, accent, .96), (.78, acc2), (1, dark(acc2, .30))], 0, 0, 0, 1)
+    d += lg(f"{u}bd", [(0, "#fff", .7), (.45, "#fff", .22), (1, "#fff", 0)], 0, 0, 0, 1)
+    d += lg(f"{u}sh", [(0, "#fff", 0), (.5, "#fff", .38), (1, "#fff", 0)], 0, 0, 1, 0)
+    d += f'<clipPath id="{u}cp"><rect x="5" y="{top}" width="{w - 10}" height="{h}" rx="{h / 2 - 1}"/></clipPath>'
+    css = (f"@keyframes {u}swp{{0%{{transform:translateX({-w - 60}px)}}55%,100%{{transform:translateX({w + 60}px)}}}}"
+           f".{u}swp{{animation:{u}swp 5.4s cubic-bezier(.5,0,.5,1) infinite}}"
+           f"@keyframes {u}hal{{0%,100%{{opacity:.20}}50%{{opacity:.5}}}}"
+           f".{u}hal{{animation:{u}hal 3.8s ease-in-out infinite}}")
+    b = f'<ellipse cx="{w / 2}" cy="{h + 16}" rx="{w / 2 - 18}" ry="11" fill="#000" opacity=".55" filter="url(#b10)"/>'
+    b += (f'<ellipse class="{u}hal" cx="{w / 2}" cy="{mid}" rx="{w / 2 - 6}" ry="{h / 2}" '
+          f'fill="{accent}" filter="url(#b18)"/>')
+    b += f'<rect x="5" y="{top + 11}" width="{w - 10}" height="{h}" rx="{h / 2}" fill="{dark(acc2, .72)}"/>'
+    b += f'<rect x="5" y="{top}" width="{w - 10}" height="{h}" rx="{h / 2}" fill="url(#{u}bg)"/>'
+    b += f'<rect x="16" y="{top + 6}" width="{w - 32}" height="{h // 3}" rx="{h // 6}" fill="#fff" opacity=".20"/>'
+    b += (f'<g clip-path="url(#{u}cp)"><rect class="{u}swp" x="-46" y="{top}" width="46" height="{h}" '
+          f'fill="url(#{u}sh)"/></g>')
+    b += (f'<rect x="5.75" y="{top + .75}" width="{w - 11.5}" height="{h - 1.5}" rx="{h / 2 - .5}" fill="none" '
+          f'stroke="url(#{u}bd)" stroke-width="1.5"/>')
+    b += shadow(gcx, gcy + 2 * s + 10, s * 0.8, .42)
+    b += cube(gcx, gcy, s, dark(accent, .42) if ink == "#ffffff" else accent, "fl", "user")
+    b += (f'<text x="{tx:.1f}" y="{mid + fs * .36:.1f}" font-size="{fs}" font-weight="800" '
+          f'text-anchor="middle" letter-spacing="2.2" fill="{ink}">{esc(label)}</text>')
+    save(fname, svg(w + MX * 2, H + MY * 2, label, f'<g transform="translate({MX},{MY})">{b}</g>', d, css=css))
+
+
 def label(fname, text, accent, idp="lbl", h=38, fs=17):
     """Flat category tag: dark pill, accent bullet, letterspaced text."""
     w = int(len(text) * (fs * 0.62 + 2.4) + 62)
@@ -1004,4 +1055,5 @@ if __name__ == "__main__":
     caption("cap-stack2.svg", "THE PULSE",
             "Ninety days of public events rendered as a skyline, with events logged, active days, peak day and the "
             "average per active day. Flat rows are quiet weeks; tall columns are launch weeks.", GREEN, "signal", "cp9")
+    profile_button("btn-view-profile.svg", "VIEW PROFILE", VIOLET, "bpv", accent2=INDIGO)
     button("btn-source.svg", "VIEW THE SOURCE OF THIS CHARACTER", INDIGO, "web", "bsrc", h=54, fs=17)

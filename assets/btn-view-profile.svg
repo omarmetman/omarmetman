@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="356" height="128" viewBox="0 0 356 128" role="img" aria-labelledby="t d">
+<title id="t">VIEW PROFILE</title>
+<desc id="d">VIEW PROFILE</desc>
+<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="bpv18bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b293f9"/><stop offset="0.4" stop-color="#8b5cf6" stop-opacity="0.96"/><stop offset="0.78" stop-color="#6366f1"/><stop offset="1" stop-color="#4547a9"/></linearGradient><linearGradient id="bpv18bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.7"/><stop offset="0.45" stop-color="#fff" stop-opacity="0.22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><linearGradient id="bpv18sh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.38"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><clipPath id="bpv18cp"><rect x="5" y="8" width="310" height="70" rx="34.0"/></clipPath></defs>
+<style>
+text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.m{font-family:'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes tw{0%,100%{opacity:.12}50%{opacity:.95}}
+@keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.4);opacity:0}}
+@keyframes sweep{0%{transform:translateX(-30%)}100%{transform:translateX(130%)}}
+@keyframes grow{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@keyframes rise{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
+.fl{animation:fl 5.5s ease-in-out infinite}
+.fl2{animation:fl 7s ease-in-out -2s infinite}
+.fl3{animation:fl 4.6s ease-in-out -1s infinite}
+.tw{animation:tw 3.4s ease-in-out infinite}
+.pr{transform-box:fill-box;transform-origin:center;animation:ring 2.2s ease-out infinite}
+.sw{animation:sweep 5s linear infinite}
+.sw2{animation:sweep 4s linear infinite}
+.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 2.2s .4s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+@keyframes bpv18swp{0%{transform:translateX(-380px)}55%,100%{transform:translateX(380px)}}.bpv18swp{animation:bpv18swp 5.4s cubic-bezier(.5,0,.5,1) infinite}@keyframes bpv18hal{0%,100%{opacity:.20}50%{opacity:.5}}.bpv18hal{animation:bpv18hal 3.8s ease-in-out infinite}</style>
+<g transform="translate(18,14)"><ellipse cx="160.0" cy="86" rx="142.0" ry="11" fill="#000" opacity=".55" filter="url(#b10)"/><ellipse class="bpv18hal" cx="160.0" cy="43.0" rx="154.0" ry="35.0" fill="#8b5cf6" filter="url(#b18)"/><rect x="5" y="19" width="310" height="70" rx="35.0" fill="#1c1d43"/><rect x="5" y="8" width="310" height="70" rx="35.0" fill="url(#bpv18bg)"/><rect x="16" y="14" width="288" height="23" rx="11" fill="#fff" opacity=".20"/><g clip-path="url(#bpv18cp)"><rect class="bpv18swp" x="-46" y="8" width="46" height="70" fill="url(#bpv18sh)"/></g><rect x="5.75" y="8.75" width="308.5" height="68.5" rx="34.5" fill="none" stroke="url(#bpv18bd)" stroke-width="1.5"/><ellipse cx="52.63999999999999" cy="75.0" rx="17.6" ry="4.9" fill="#000" opacity="0.42" filter="url(#b4)"/><g class="fl"><polygon points="33.6,32.0 52.6,43.0 52.6,65.0 33.6,54.0" fill="#3f2970"/><polygon points="52.6,43.0 71.7,32.0 71.7,54.0 52.6,65.0" fill="#281a48"/><polygon points="52.6,21.0 71.7,32.0 52.6,43.0 33.6,32.0" fill="#826eae"/><g transform="matrix(0.1905 0.1100 -0.1905 0.1100 52.64 21.00)"><circle cx="50" cy="32" r="19" fill="#ffffff"/><path d="M12 92 C12 56 88 56 88 92 Z" fill="#ffffff"/></g><polyline points="33.6,32.0 52.6,21.0 71.7,32.0" fill="none" stroke="#b9aed2" stroke-opacity=".55" stroke-width="1" stroke-linejoin="round"/></g><text x="187.1" y="50.6" font-size="21" font-weight="800" text-anchor="middle" letter-spacing="2.2" fill="#ffffff">VIEW PROFILE</text></g>
+</svg>
