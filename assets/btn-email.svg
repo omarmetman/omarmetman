@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="132" height="82" viewBox="0 0 132 82" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="82" viewBox="0 0 128 82" role="img" aria-labelledby="t d">
 <title id="t">EMAIL</title>
 <desc id="d">EMAIL</desc>
-<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="bc515bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ed5a4d"/><stop offset="0.45" stop-color="#ea4335"/><stop offset="1" stop-color="#912a21"/></linearGradient><linearGradient id="bc515bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="bc515bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ef6c61"/><stop offset="0.45" stop-color="#eb4e41"/><stop offset="1" stop-color="#88271f"/></linearGradient><linearGradient id="bc515bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
 <style>
 text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
 .m{font-family:'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
@@ -22,5 +22,5 @@ text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', 
 .grow{transform-box:fill-box;transform-origin:left;animation:grow 2.2s .4s cubic-bezier(.2,.8,.2,1) both}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
-<ellipse cx="66.0" cy="72" rx="52.0" ry="9" fill="#000" opacity=".45" filter="url(#b4)"/><rect x="4" y="12" width="124" height="64" rx="32.0" fill="#42130f"/><rect x="4" y="4" width="124" height="64" rx="32.0" fill="url(#bc515bg)"/><rect x="10" y="8" width="112" height="21" rx="10" fill="#fff" opacity=".20"/><rect x="4.75" y="4.75" width="122.5" height="62.5" rx="31.5" fill="none" stroke="url(#bc515bd)" stroke-width="1.5"/><text x="66.0" y="47.2" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="2" fill="#ffffff">EMAIL</text>
+<ellipse cx="64.0" cy="72" rx="50.0" ry="9" fill="#000" opacity=".45" filter="url(#b4)"/><rect x="4" y="12" width="120" height="64" rx="32.0" fill="#330f0c"/><rect x="4" y="4" width="120" height="64" rx="32.0" fill="url(#bc515bg)"/><rect x="12" y="8" width="104" height="21" rx="10" fill="#fff" opacity=".18"/><rect x="4.75" y="4.75" width="118.5" height="62.5" rx="31.5" fill="none" stroke="url(#bc515bd)" stroke-width="1.5"/><text x="64.0" y="43.2" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="1.6" fill="#ffffff">EMAIL</text>
 </svg>

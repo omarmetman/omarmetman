@@ -4,12 +4,12 @@
 
 <br />
 
-<a href="https://omarmetman.vercel.app"><img src="./assets/btn-lab.svg" alt="Enter the lab: omarmetman.vercel.app" height="56" /></a>
-<a href="https://t.me/omarmetman"><img src="./assets/btn-summon.svg" alt="Summon me on Telegram" height="56" /></a>
+<img src="https://komarev.com/ghpvc/?username=omarmetman&color=8b5cf6&style=flat-square&label=WITNESSES" alt="Profile views" />
 
 <br />
 
-<img src="https://komarev.com/ghpvc/?username=omarmetman&color=8b5cf6&style=flat-square&label=WITNESSES" alt="Profile views" />
+<a href="https://omarmetman.vercel.app"><img src="./assets/btn-lab.svg" alt="Enter the lab: omarmetman.vercel.app" height="56" /></a>
+<a href="https://t.me/omarmetman"><img src="./assets/btn-summon.svg" alt="Summon me on Telegram" height="56" /></a>
 
 </div>
 
@@ -26,7 +26,7 @@
 </div>
 
 <details>
-<summary><b>View the source of this character</b></summary>
+<summary><img src="./assets/btn-source.svg" alt="View the source of this character" height="44" /></summary>
 
 ```javascript
 const omar = {
@@ -82,6 +82,10 @@ const omar = {
 
 <br />
 
+<img src="./assets/cap-arsenal.svg" alt="The full arsenal: every domain above, with real proficiency levels and years of practice - the same numbers that power the live stats page." width="100%" />
+
+<br />
+
 <a href="https://omarmetman.vercel.app/about"><img src="./assets/btn-arsenal.svg" alt="Full 53-skill arsenal" height="52" /></a>
 <a href="https://omarmetman.vercel.app/stats"><img src="./assets/btn-stats.svg" alt="Live stats" height="52" /></a>
 
@@ -105,20 +109,20 @@ const omar = {
 
 <img src="./assets/portal.svg" alt="Observation deck: you are looking at live data, not decoration. Every chart below rebuilds itself from the commit history." width="100%" />
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=omarmetman&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f172a&rank_icon=github&title_color=8b5cf6&icon_color=22d3ee&ring_color=8b5cf6" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omarmetman&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=8b5cf6" alt="Top languages" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=omarmetman&show_icons=true&theme=radical&hide_border=true&bg_color=0b1020&rank_icon=github&title_color=c4b5fd&icon_color=22d3ee&ring_color=8b5cf6&line=22d3ee&text=e2e8f0&card_width=340" alt="GitHub stats" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omarmetman&layout=compact&langs_count=8&theme=radical&hide_border=true&bg_color=0b1020&title_color=c4b5fd&ring_color=22d3ee&text=e2e8f0&card_width=300" alt="Top languages" />
 
 <br />
 
-<sub>📊 <b>THE DOSSIER</b> — rank, total stars earned, commits, pull requests and the languages most used across every public repository. Recomputed live on every page load.</sub>
+<img src="./assets/cap-dossier.svg" alt="The dossier: rank, stars, commits, pull requests and languages, recomputed live on every page load." width="100%" />
 
 <br /><br />
 
-<img src="https://streak-stats.demolab.com?user=omarmetman&theme=tokyonight&hide_border=true&background=0f172a&ring=8b5cf6&fire=f472b6&currStreakLabel=22d3ee" alt="Contribution streak" />
+<img src="https://streak-stats.demolab.com?user=omarmetman&theme=radical&hide_border=true&background=0b1020&ring=8b5cf6&fire=f472b6&currStreakLabel=22d3ee&sideLabels=true&sideNums=true&dates=true" alt="Contribution streak" />
 
 <br />
 
-<sub>🔥 <b>THE STREAK</b> — consecutive days with at least one contribution. Consistency is the whole game: shipping a little every day beats heroic all-nighters.</sub>
+<img src="./assets/cap-streak.svg" alt="The streak: consecutive days with at least one contribution. Consistency is the whole game." width="100%" />
 
 <br /><br />
 
@@ -129,7 +133,7 @@ const omar = {
   <img src="./profile-3d-contrib/city-day.svg" alt="3D contribution city without language donut" width="100%" />
 </picture>
 
-<sub>🗺️ <b>THE LIVING CITY</b> — one full year of work rendered as an isometric hologram and rebuilt <b>daily by a GitHub Actions satellite</b> (<code>.github/workflows/profile-3d.yml</code>). Each floor tile is a day, each tower is code shipped that day. The pentagon radar scores <b>Commit / Issue / Pull Request / Review / Repo</b> — pure proof of work, with no language labels by design. The full arsenal lives in the sections above.</sub>
+<img src="./assets/cap-city.svg" alt="The living city: one full year of work as an isometric hologram, rebuilt daily. Each floor tile is a day, each tower is code shipped that day. The radar scores Commit, Issue, Pull Request, Review and Repo." width="100%" />
 
 <br /><br />
 
@@ -138,23 +142,23 @@ const omar = {
   <img src="https://raw.githubusercontent.com/omarmetman/omarmetman/output/github-snake.svg" alt="A snake eating my contribution graph" width="100%" />
 </picture>
 
-<sub>🐍 <b>THE SERPENT</b> — the same contribution grid, devoured cell by cell and re-released every 12 hours (<code>.github/workflows/snake.yml</code>). It only moves where there is history — a long snake is proof of consistency no badge can fake.</sub>
+<img src="./assets/cap-serpent.svg" alt="The serpent: the same contribution grid devoured cell by cell, re-released every 12 hours. A long snake is proof of consistency no badge can fake." width="100%" />
 
 <br /><br />
 
-<img src="https://github-profile-trophy.vercel.app/?username=omarmetman&theme=tokyonight&no-frame=true&column=6&margin-w=10" alt="GitHub trophies" />
+<img src="https://github-profile-trophy.vercel.app/?username=omarmetman&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=8&rank=-1" alt="GitHub trophies" />
 
 <br />
 
-<sub>🏆 <b>THE TROPHY VAULT</b> — milestones unlocked: stars collected, repositories forged, followers gathered. Every trophy maps to something actually shipped.</sub>
+<img src="./assets/cap-trophy.svg" alt="The trophy vault: stars collected, repositories forged, followers gathered. Every trophy maps to something actually shipped." width="100%" />
 
 <br /><br />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=omarmetman&theme=tokyo-night&hide_border=true&bg_color=0f172a&color=8b5cf6&line=22d3ee&point=f472b6" alt="Contribution activity graph" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=omarmetman&theme=react-dark&hide_border=true&bg_color=0b1020&color=c4b5fd&line=22d3ee&point=f472b6&area=true" alt="Contribution activity graph" width="100%" />
 
 <br />
 
-<sub>〰️ <b>THE PULSE</b> — 31 days of contribution frequency as one continuous heartbeat. Flat lines are silence; spikes are launch weeks.</sub>
+<img src="./assets/cap-pulse.svg" alt="The pulse: 31 days of contribution frequency as one continuous heartbeat. Flat lines are silence, spikes are launch weeks." width="100%" />
 
 </div>
 

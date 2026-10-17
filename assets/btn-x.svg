@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="74" height="82" viewBox="0 0 74 82" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="82" viewBox="0 0 78 82" role="img" aria-labelledby="t d">
 <title id="t">X</title>
 <desc id="d">X</desc>
-<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="bc313bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e5ebf2"/><stop offset="0.45" stop-color="#e2e8f0"/><stop offset="1" stop-color="#8c9095"/></linearGradient><linearGradient id="bc313bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="bc313bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8edf3"/><stop offset="0.45" stop-color="#e4e9f1"/><stop offset="1" stop-color="#83878b"/></linearGradient><linearGradient id="bc313bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
 <style>
 text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
 .m{font-family:'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
@@ -22,5 +22,5 @@ text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', 
 .grow{transform-box:fill-box;transform-origin:left;animation:grow 2.2s .4s cubic-bezier(.2,.8,.2,1) both}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
-<ellipse cx="37.0" cy="72" rx="23.0" ry="9" fill="#000" opacity=".45" filter="url(#b4)"/><rect x="4" y="12" width="66" height="64" rx="32.0" fill="#3f4143"/><rect x="4" y="4" width="66" height="64" rx="32.0" fill="url(#bc313bg)"/><rect x="10" y="8" width="54" height="21" rx="10" fill="#fff" opacity=".20"/><rect x="4.75" y="4.75" width="64.5" height="62.5" rx="31.5" fill="none" stroke="url(#bc313bd)" stroke-width="1.5"/><text x="37.0" y="47.2" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="2" fill="#0b1020">X</text>
+<ellipse cx="39.0" cy="72" rx="25.0" ry="9" fill="#000" opacity=".45" filter="url(#b4)"/><rect x="4" y="12" width="70" height="64" rx="32.0" fill="#323335"/><rect x="4" y="4" width="70" height="64" rx="32.0" fill="url(#bc313bg)"/><rect x="12" y="8" width="54" height="21" rx="10" fill="#fff" opacity=".18"/><rect x="4.75" y="4.75" width="68.5" height="62.5" rx="31.5" fill="none" stroke="url(#bc313bd)" stroke-width="1.5"/><text x="39.0" y="43.2" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="1.6" fill="#050a18">X</text>
 </svg>

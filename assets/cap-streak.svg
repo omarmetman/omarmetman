@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="178" viewBox="0 0 880 178" role="img" aria-labelledby="t d">
+<title id="t">THE STREAK: Consecutive days with at least one contribution. Consistency is the whole game: shipping a little every day beats heroic all-nighters.</title>
+<desc id="d">THE STREAK. Consecutive days with at least one contribution. Consistency is the whole game: shipping a little every day beats heroic all-nighters.</desc>
+<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="cp2f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a2142"/><stop offset="1" stop-color="#0f1530"/></linearGradient><linearGradient id="cp2b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.95"/><stop offset="0.55" stop-color="#f59e0b" stop-opacity="0.28"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0.08"/></linearGradient><radialGradient id="cp2g" cx=".1" cy=".05" r=".8"><stop offset="0" stop-color="#f59e0b" stop-opacity=".28"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="cp2glow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.2"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></linearGradient></defs>
+<style>
+text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.m{font-family:'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes tw{0%,100%{opacity:.12}50%{opacity:.95}}
+@keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.4);opacity:0}}
+@keyframes sweep{0%{transform:translateX(-30%)}100%{transform:translateX(130%)}}
+@keyframes grow{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+@keyframes rise{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
+.fl{animation:fl 5.5s ease-in-out infinite}
+.fl2{animation:fl 7s ease-in-out -2s infinite}
+.fl3{animation:fl 4.6s ease-in-out -1s infinite}
+.tw{animation:tw 3.4s ease-in-out infinite}
+.pr{transform-box:fill-box;transform-origin:center;animation:ring 2.2s ease-out infinite}
+.sw{animation:sweep 5s linear infinite}
+.sw2{animation:sweep 4s linear infinite}
+.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 2.2s .4s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="14" y="24" width="852" height="152" rx="18" fill="#000" opacity=".5" filter="url(#b10)"/><rect x="4" y="16" width="872" height="156" rx="18" fill="#402903"/><rect x="4" y="10.0" width="872" height="156" rx="18" fill="#674205"/><rect x="4" y="4" width="872" height="156" rx="18" fill="url(#cp2f)"/><rect x="4" y="4" width="872" height="156" rx="18" fill="url(#cp2g)"/><rect x="4.75" y="4.75" width="870.5" height="154.5" rx="17.5" fill="none" stroke="url(#cp2b)" stroke-width="1.5"/><line x1="22" y1="5.5" x2="858" y2="5.5" stroke="#fff" stroke-opacity=".14"/><rect x="14" y="14" width="852" height="128" rx="12" fill="url(#cp2glow)"/><ellipse cx="54" cy="58" rx="17" ry="4.8" fill="#000" opacity="0.45" filter="url(#b4)"/><g class="fl"><polygon points="34.9,25.0 54.0,36.0 54.0,58.0 34.9,47.0" fill="#bf7b09"/><polygon points="54.0,36.0 73.1,25.0 73.1,47.0 54.0,58.0" fill="#7a4f06"/><polygon points="54.0,14.0 73.1,25.0 54.0,36.0 34.9,25.0" fill="#f8b94f"/><g transform="matrix(0.1905 0.1100 -0.1905 0.1100 54.00 14.00)"><rect x="12" y="56" width="20" height="36" rx="5" fill="#ffffff"/><rect x="40" y="34" width="20" height="58" rx="5" fill="#ffffff"/><rect x="68" y="10" width="20" height="82" rx="5" fill="#ffffff"/></g><polyline points="34.9,25.0 54.0,14.0 73.1,25.0" fill="none" stroke="#fbd89d" stroke-opacity=".55" stroke-width="1" stroke-linejoin="round"/></g><text x="96" y="34" font-size="19" font-weight="800" fill="#fff" letter-spacing="2.6">THE STREAK</text><rect x="96" y="44" width="128" height="2" rx="1" fill="#f59e0b" opacity=".55"/><text x="28" y="84" font-size="14.5" fill="#cbd5e1">Consecutive days with at least one contribution. Consistency is the whole game: shipping a little</text><text x="28" y="111" font-size="14.5" fill="#cbd5e1">every day beats heroic all-nighters.</text>
+</svg>

@@ -754,33 +754,37 @@ def build_legend():
 # BUTTONS — small 3D pill links (no plain-text links anywhere)
 # =========================================================================
 def _text_ink(accent):
+    """Dark ink only on genuinely pale fills; everything else gets white."""
     r, g, bl = _rgb(accent)
     lum = (0.299 * r + 0.587 * g + 0.114 * bl) / 255
-    return "#0b1020" if lum > 0.55 else "#ffffff"
+    return "#050a18" if lum > 0.62 else "#ffffff"
 
 
 def button(fname, label, accent, gname=None, idp="btn", h=64, fs=20):
+    """3D pill link. Glyph sits in a reserved left slot, text in a right slot."""
     u = uid(idp)
-    pad = 30
-    gw = 58 if gname else 0
-    cw = fs * 0.62 + 2
-    w = int(len(label) * cw + pad * 2 + gw)
-    d = lg(f"{u}bg", [(0, light(accent, .12)), (.45, accent), (1, dark(accent, .38))], 0, 0, 0, 1)
-    d += lg(f"{u}bd", [(0, "#fff", .5), (1, "#fff", 0)], 0, 0, 0, 1)
+    pad = 26
+    slot = 62 if gname else 0          # reserved glyph zone
+    text_w = len(label) * fs * 0.62 + 8
+    w = int(pad * 2 + slot + text_w + 6)
+    d = lg(f"{u}bg", [(0, light(accent, .22)), (.45, light(accent, .06)), (1, dark(accent, .42))], 0, 0, 0, 1)
+    d += lg(f"{u}bd", [(0, "#fff", .55), (1, "#fff", 0)], 0, 0, 0, 1)
     H = h + 18
+    mid = 4 + h / 2
     b = f'<ellipse cx="{w / 2}" cy="{h + 8}" rx="{w / 2 - 14}" ry="9" fill="#000" opacity=".45" filter="url(#b4)"/>'
-    b += f'<rect x="4" y="{12}" width="{w - 8}" height="{h}" rx="{h / 2}" fill="{dark(accent, .72)}"/>'
+    b += f'<rect x="4" y="12" width="{w - 8}" height="{h}" rx="{h / 2}" fill="{dark(accent, .78)}"/>'
     b += f'<rect x="4" y="4" width="{w - 8}" height="{h}" rx="{h / 2}" fill="url(#{u}bg)"/>'
-    b += f'<rect x="10" y="8" width="{w - 20}" height="{h // 3}" rx="{h // 6}" fill="#fff" opacity=".20"/>'
+    b += f'<rect x="12" y="8" width="{w - 24}" height="{h // 3}" rx="{h // 6}" fill="#fff" opacity=".18"/>'
     b += (f'<rect x="4.75" y="4.75" width="{w - 9.5}" height="{h - 1.5}" rx="{h / 2 - .5}" fill="none" '
           f'stroke="url(#{u}bd)" stroke-width="1.5"/>')
     ink = _text_ink(accent)
-    tx = w / 2 + (gw / 2 if gname else 0)
+    tx = slot + pad + text_w / 2 + 4 if gname else w / 2
     if gname:
-        b += shadow(34, h - 6, 15, .4)
-        b += cube(34, 8, 17, accent if ink == "#ffffff" else dark(accent, .3), "fl", gname)
-    b += (f'<text x="{tx:.1f}" y="{8 + h / 2 + fs * .36:.1f}" font-size="{fs}" font-weight="800" '
-          f'text-anchor="middle" letter-spacing="2" fill="{ink}">{esc(label)}</text>')
+        bx = 14 + slot / 2 - 8
+        b += shadow(bx, mid + 24, 14, .38)
+        b += cube(bx, mid - 15, 18, dark(accent, .36) if ink == "#ffffff" else accent, "fl", gname)
+    b += (f'<text x="{tx:.1f}" y="{mid + fs * .36:.1f}" font-size="{fs}" font-weight="800" '
+          f'text-anchor="middle" letter-spacing="1.6" fill="{ink}">{esc(label)}</text>')
     save(fname, svg(w, H, label, b, d))
 
 
@@ -796,6 +800,26 @@ def label(fname, text, accent, idp="lbl", h=38, fs=17):
     b += (f'<text x="{w / 2 + 8}" y="{2 + h / 2 + fs * .36:.1f}" font-size="{fs}" font-weight="800" '
           f'text-anchor="middle" letter-spacing="2.4" fill="{light(accent, .45)}">{esc(text)}</text>')
     save(fname, svg(w, H, text, b, ""))
+
+
+def caption(fname, title, body, accent, gname, idp="cap"):
+    """Designed caption card: accent cube badge + letterspaced title + wrapped body."""
+    W, D = 880, 12
+    ROW, PAD, TOP = 27, 28, 44
+    tw = int((W - PAD * 2 - 62) / 7.55)
+    lines = wrap(body, tw)
+    PH = TOP + 40 + len(lines) * ROW + 18
+    H = PH + D + 10
+    d, b = slab(idp, 4, 4, W - 8, PH, accent, depth=D, rx=18)
+    d += lg(f"{idp}glow", [(0, accent, .20), (1, accent, 0)], 0, 0, 1, 1)
+    b += f'<rect x="14" y="14" width="{W - 28}" height="{PH - 28}" rx="12" fill="url(#{idp}glow)"/>'
+    b += shadow(54, 58, 17, .45)
+    b += cube(54, 14, 22, accent, "fl", gname)
+    b += f'<text x="96" y="{PAD + 6}" font-size="19" font-weight="800" fill="#fff" letter-spacing="2.6">{esc(title)}</text>'
+    b += f'<rect x="96" y="{PAD + 16}" width="{len(title) * 12.8:.0f}" height="2" rx="1" fill="{accent}" opacity=".55"/>'
+    for i, ln in enumerate(lines):
+        b += f'<text x="{PAD}" y="{TOP + 40 + i * ROW}" font-size="14.5" fill="#cbd5e1">{esc(ln)}</text>'
+    save(fname, svg(W, H, f"{title}: {body}", b, d, desc=f"{title}. {body}"))
 
 
 # =========================================================================
@@ -962,3 +986,28 @@ if __name__ == "__main__":
     label("lbl-devops.svg", "DEVOPS & CLOUD", "#06b6d4", "ll4")
     label("lbl-tools.svg", "TOOLS", GREEN, "ll5")
     label("lbl-ai.svg", "AI, IOT & MAKER", "#a855f7", "ll6")
+
+    caption("cap-dossier.svg", "THE DOSSIER",
+            "Rank, total stars earned, commits, pull requests and the languages most used across every public "
+            "repository. Recomputed live on every page load.", VIOLET, "bars", "cp1")
+    caption("cap-streak.svg", "THE STREAK",
+            "Consecutive days with at least one contribution. Consistency is the whole game: shipping a little "
+            "every day beats heroic all-nighters.", AMBER, "bars", "cp2")
+    caption("cap-city.svg", "THE LIVING CITY",
+            "One full year of work rendered as an isometric hologram and rebuilt daily by a GitHub Actions "
+            "satellite. Each floor tile is a day, each tower is code shipped that day. The pentagon radar scores "
+            "Commit, Issue, Pull Request, Review and Repo - pure proof of work, with no language labels by design.",
+            CYAN, "layers", "cp3")
+    caption("cap-serpent.svg", "THE SERPENT",
+            "The same contribution grid, devoured cell by cell and re-released every 12 hours. It only moves where "
+            "there is history - a long snake is proof of consistency no badge can fake.", GREEN, "route", "cp4")
+    caption("cap-trophy.svg", "THE TROPHY VAULT",
+            "Milestones unlocked: stars collected, repositories forged, followers gathered. Every trophy maps to "
+            "something actually shipped.", PINK, "star", "cp5")
+    caption("cap-pulse.svg", "THE PULSE",
+            "31 days of contribution frequency as one continuous heartbeat. Flat lines are silence; spikes are "
+            "launch weeks.", VIOLET, "signal", "cp6")
+    caption("cap-arsenal.svg", "THE FULL ARSENAL",
+            "Every domain you see above, with real proficiency levels and years of practice - the same numbers that "
+            "power the live stats page. This is the complete arsenal, not a highlight reel.", CYAN, "layers", "cp7")
+    button("btn-source.svg", "VIEW THE SOURCE OF THIS CHARACTER", INDIGO, "web", "bsrc", h=54, fs=17)

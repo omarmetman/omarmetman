@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="175" height="82" viewBox="0 0 175 82" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" width="165" height="82" viewBox="0 0 165 82" role="img" aria-labelledby="t d">
 <title id="t">LINKEDIN</title>
 <desc id="d">LINKEDIN</desc>
-<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="bc212bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2778c9"/><stop offset="0.45" stop-color="#0a66c2"/><stop offset="1" stop-color="#063f78"/></linearGradient><linearGradient id="bc212bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<defs><filter id="b4" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter><filter id="b10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter><filter id="b18" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="bc212bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4088cf"/><stop offset="0.45" stop-color="#196fc6"/><stop offset="1" stop-color="#063b71"/></linearGradient><linearGradient id="bc212bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
 <style>
 text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
 .m{font-family:'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
@@ -22,5 +22,5 @@ text{font-family:'Segoe UI', Inter, system-ui, -apple-system, 'Helvetica Neue', 
 .grow{transform-box:fill-box;transform-origin:left;animation:grow 2.2s .4s cubic-bezier(.2,.8,.2,1) both}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
-<ellipse cx="87.5" cy="72" rx="73.5" ry="9" fill="#000" opacity=".45" filter="url(#b4)"/><rect x="4" y="12" width="167" height="64" rx="32.0" fill="#031d36"/><rect x="4" y="4" width="167" height="64" rx="32.0" fill="url(#bc212bg)"/><rect x="10" y="8" width="155" height="21" rx="10" fill="#fff" opacity=".20"/><rect x="4.75" y="4.75" width="165.5" height="62.5" rx="31.5" fill="none" stroke="url(#bc212bd)" stroke-width="1.5"/><text x="87.5" y="47.2" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="2" fill="#ffffff">LINKEDIN</text>
+<ellipse cx="82.5" cy="72" rx="68.5" ry="9" fill="#000" opacity=".45" filter="url(#b4)"/><rect x="4" y="12" width="157" height="64" rx="32.0" fill="#02162b"/><rect x="4" y="4" width="157" height="64" rx="32.0" fill="url(#bc212bg)"/><rect x="12" y="8" width="141" height="21" rx="10" fill="#fff" opacity=".18"/><rect x="4.75" y="4.75" width="155.5" height="62.5" rx="31.5" fill="none" stroke="url(#bc212bd)" stroke-width="1.5"/><text x="82.5" y="43.2" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="1.6" fill="#ffffff">LINKEDIN</text>
 </svg>
