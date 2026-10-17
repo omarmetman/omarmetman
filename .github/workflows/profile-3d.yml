@@ -9,6 +9,7 @@ on:
     paths:
       - ".github/workflows/profile-3d.yml"
       - "tools/strip_pie.py"
+      - "tools/build_telemetry.py"
 
 permissions:
   contents: write
@@ -28,10 +29,15 @@ jobs:
       - name: Strip language donut (city without pie)
         run: python3 tools/strip_pie.py
 
+      - name: Build telemetry panels (overview, languages, pulse, streak)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/build_telemetry.py "${{ github.repository_owner }}"
+
       - name: Commit & push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A .
-          git diff --cached --quiet || git commit -m "chore: update 3D contribution graph"
+          git diff --cached --quiet || git commit -m "chore: refresh telemetry panels"
           git push

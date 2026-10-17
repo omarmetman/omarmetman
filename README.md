@@ -109,20 +109,27 @@ const omar = {
 
 <img src="./assets/portal.svg" alt="Observation deck: you are looking at live data, not decoration. Every chart below rebuilds itself from the commit history." width="100%" />
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=omarmetman&show_icons=true&theme=radical&hide_border=true&bg_color=0b1020&rank_icon=github&title_color=c4b5fd&icon_color=22d3ee&ring_color=8b5cf6&line=22d3ee&text=e2e8f0&card_width=340" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omarmetman&layout=compact&langs_count=8&theme=radical&hide_border=true&bg_color=0b1020&title_color=c4b5fd&ring_color=22d3ee&text=e2e8f0&card_width=300" alt="Top languages" />
+<br />
+
+<img src="./telemetry/overview.svg" alt="Live account overview: public repositories, followers, total stars and forks served." width="100%" />
+
+<img src="./assets/cap-account.svg" alt="The account: public repositories, followers, stars and forks pulled straight from the GitHub API and rebuilt on every scheduled run." width="100%" />
 
 <br />
 
-<img src="./assets/cap-dossier.svg" alt="The dossier: rank, stars, commits, pull requests and languages, recomputed live on every page load." width="100%" />
+<img src="./telemetry/streak.svg" alt="Current activity streak in consecutive days." width="100%" />
+
+<br />
+
+<img src="./telemetry/languages.svg" alt="Language composition across owned repositories with share per language." width="100%" />
+
+<br />
+
+<img src="./telemetry/activity.svg" alt="Rolling 90 day activity skyline: events logged, active days, peak day and average per active day." width="100%" />
+
+<img src="./assets/cap-stack2.svg" alt="The pulse: ninety days of public events as a skyline, with events logged, active days, peak day and average per active day." width="100%" />
 
 <br /><br />
-
-<img src="https://streak-stats.demolab.com?user=omarmetman&theme=radical&hide_border=true&background=0b1020&ring=8b5cf6&fire=f472b6&currStreakLabel=22d3ee&sideLabels=true&sideNums=true&dates=true" alt="Contribution streak" />
-
-<br />
-
-<img src="./assets/cap-streak.svg" alt="The streak: consecutive days with at least one contribution. Consistency is the whole game." width="100%" />
 
 <br /><br />
 
@@ -143,22 +150,6 @@ const omar = {
 </picture>
 
 <img src="./assets/cap-serpent.svg" alt="The serpent: the same contribution grid devoured cell by cell, re-released every 12 hours. A long snake is proof of consistency no badge can fake." width="100%" />
-
-<br /><br />
-
-<img src="https://github-profile-trophy.vercel.app/?username=omarmetman&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=8&rank=-1" alt="GitHub trophies" />
-
-<br />
-
-<img src="./assets/cap-trophy.svg" alt="The trophy vault: stars collected, repositories forged, followers gathered. Every trophy maps to something actually shipped." width="100%" />
-
-<br /><br />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=omarmetman&theme=react-dark&hide_border=true&bg_color=0b1020&color=c4b5fd&line=22d3ee&point=f472b6&area=true" alt="Contribution activity graph" width="100%" />
-
-<br />
-
-<img src="./assets/cap-pulse.svg" alt="The pulse: 31 days of contribution frequency as one continuous heartbeat. Flat lines are silence, spikes are launch weeks." width="100%" />
 
 </div>
 

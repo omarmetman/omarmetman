@@ -987,12 +987,6 @@ if __name__ == "__main__":
     label("lbl-tools.svg", "TOOLS", GREEN, "ll5")
     label("lbl-ai.svg", "AI, IOT & MAKER", "#a855f7", "ll6")
 
-    caption("cap-dossier.svg", "THE DOSSIER",
-            "Rank, total stars earned, commits, pull requests and the languages most used across every public "
-            "repository. Recomputed live on every page load.", VIOLET, "bars", "cp1")
-    caption("cap-streak.svg", "THE STREAK",
-            "Consecutive days with at least one contribution. Consistency is the whole game: shipping a little "
-            "every day beats heroic all-nighters.", AMBER, "bars", "cp2")
     caption("cap-city.svg", "THE LIVING CITY",
             "One full year of work rendered as an isometric hologram and rebuilt daily by a GitHub Actions "
             "satellite. Each floor tile is a day, each tower is code shipped that day. The pentagon radar scores "
@@ -1001,13 +995,13 @@ if __name__ == "__main__":
     caption("cap-serpent.svg", "THE SERPENT",
             "The same contribution grid, devoured cell by cell and re-released every 12 hours. It only moves where "
             "there is history - a long snake is proof of consistency no badge can fake.", GREEN, "route", "cp4")
-    caption("cap-trophy.svg", "THE TROPHY VAULT",
-            "Milestones unlocked: stars collected, repositories forged, followers gathered. Every trophy maps to "
-            "something actually shipped.", PINK, "star", "cp5")
-    caption("cap-pulse.svg", "THE PULSE",
-            "31 days of contribution frequency as one continuous heartbeat. Flat lines are silence; spikes are "
-            "launch weeks.", VIOLET, "signal", "cp6")
     caption("cap-arsenal.svg", "THE FULL ARSENAL",
             "Every domain you see above, with real proficiency levels and years of practice - the same numbers that "
             "power the live stats page. This is the complete arsenal, not a highlight reel.", CYAN, "layers", "cp7")
+    caption("cap-account.svg", "THE ACCOUNT",
+            "Public repositories, followers, stars collected and forks served - pulled straight from the GitHub API "
+            "and rebuilt on every scheduled run. No vanity counters, no decoration.", VIOLET, "bars", "cp8")
+    caption("cap-stack2.svg", "THE PULSE",
+            "Ninety days of public events rendered as a skyline, with events logged, active days, peak day and the "
+            "average per active day. Flat rows are quiet weeks; tall columns are launch weeks.", GREEN, "signal", "cp9")
     button("btn-source.svg", "VIEW THE SOURCE OF THIS CHARACTER", INDIGO, "web", "bsrc", h=54, fs=17)
